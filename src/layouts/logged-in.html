@@ -17,17 +17,19 @@
     {{>menu}}
 
   </div>
-  
+  <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-transition="overlap">
+    {{>profile-menu}}
+  </div>
 
   <div class="off-canvas-content" data-off-canvas-content>
-    <div class="grid-container full"></div>
+    
     <div class="grid-y medium-grid-frame">
       {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-      {{>nav}}
+      {{>nav-logged-in}}
       {{> body}}
       
     </div>
-  </div>
+  
   <script src="{{root}}assets/js/app.js"></script>
 </body>
 

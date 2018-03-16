@@ -9,8 +9,8 @@
     padding-bottom: 400px;
 }
 
-.top-bar  {background-color: #ffffff00}
-.top-bar ul {background-color: transparent;}
+.top-bar  {background-color: #ce9f9f}
+.top-bar ul {background-color: #ce9f9F;}
 
 .window-height {
     height: 85vh;
@@ -90,26 +90,9 @@ body {
     color: $color-orange;
 }
 
-.first {
-    background-color: $color-orange;
-    height: -webkit-fill-available;
-    
-}
-
-.second {
-    background-color: $secondary-color;
-    height: -webkit-fill-available;
-    
-}
-
-.third {
-    background-color: $primary-color;
-    height: -webkit-fill-available;
-    
-}
 
 .home-bg {
-    background-image: url(../img/landing-01.png);
+    background-image: url(../media/landing-01.png);
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -121,7 +104,7 @@ body {
 }
 
 .login-bg {
-    background-image: url(../img/web-loginregistro-01.png);
+    background-image: url(../media/web-loginregistro-01.png);
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -130,4 +113,41 @@ body {
     left: 0;
     z-index: -10;
     padding-top: 4rem;
+}
+
+.title-bar {
+    background-color: transparent;
+    color: $black;
+
+    &-title {
+        color: $black;
+
+        
+
+    }
+
+    
+}
+
+.profile-button{
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0);
+    
+
+    &:hover{
+        background-color: $lighter-gray;
+    }
+
+}
+
+.index-content {
+    @include breakpoint(medium){
+        padding-top: 65%;
+    }
+}
+
+.login-content {
+    @include breakpoint(medium){
+        padding-top: 30%;
+    }
 }
