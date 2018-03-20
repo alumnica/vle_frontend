@@ -3,6 +3,18 @@ import whatInput from 'what-input';
 
 window.$ = $;
 
+
+//Sweet Alert
+
+import swal from 'sweetalert2';
+
+// swal({
+//     title: 'Error!',
+//     text: 'Do you want to continue',
+//     type: 'error',
+//     confirmButtonText: 'Cool'
+//   })
+
 import Foundation from 'foundation-sites';
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
@@ -18,3 +30,4 @@ $(document).foundation();
 //   hamburger.classList.toggle("is-active");
 //   // Do something else, like open/close menu
 // });
+
