@@ -1,9 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
-
 
 .space{
     padding-bottom: 400px;
@@ -148,6 +142,48 @@ body {
 
 .login-content {
     @include breakpoint(medium){
-        padding-top: 30%;
+        padding-top: 10%;
     }
+}
+
+
+.avatar-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+           
+}
+.avatar-1{background-image:url(http://via.placeholder.com/100/f12323.png);}
+.avatar-2{background-image:url(http://via.placeholder.com/100/f12323.png);}
+
+.avatar-selector input:active +.drinkcard-avatar{opacity: .9;}
+.avatar-selector input:checked +.drinkcard-avatar{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.drinkcard-avatar{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:100px;height:70px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.drinkcard-avatar:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+
+.first-login-p1 {
+    background-color: red;
+    padding: 3rem;
 }

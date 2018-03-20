@@ -1,0 +1,100 @@
+.first-q-form {
+    
+    &__container{
+        @include xy-grid;
+    padding: 1rem 0;
+    border-radius: 3px;
+    @include breakpoint(medium){
+        padding: 2rem;
+    }
+    text-align: center;
+    }
+    
+
+    &__radio-group{
+       @include xy-cell(6);
+       
+        
+    }
+
+    &__radio-input {
+       display: none;
+    }
+
+    &__radio-label-1{
+        border: 4px solid transparent;
+        border-radius: 5px;
+        padding: .5rem;
+        color: $white;
+        transition: all .2s;
+
+        &:hover {
+            background-color: $color-peri;
+        }
+    }
+
+
+    &__radio-input:checked ~ &__radio-label-1 {
+        border: 4px solid $white;
+        background-color: $color-peri;
+        
+    }
+
+    &__radio-label-2{
+        border: 4px solid transparent;
+        border-radius: 5px;
+        padding: .5rem;
+        color: $white;
+        transition: all .2s;
+
+        &:hover {
+            background-color: $color-red;
+        }
+    }
+
+
+    &__radio-input:checked ~ &__radio-label-2 {
+        border: 4px solid $white;
+        background-color: $color-red;
+        
+    }
+
+    &__radio-label-3{
+        border: 4px solid transparent;
+        border-radius: 5px;
+        padding: .5rem;
+        color: $white;
+        transition: all .2s;
+
+        &:hover {
+            background-color: $color-green-2;
+        }
+    }
+
+
+    &__radio-input:checked ~ &__radio-label-3 {
+        border: 4px solid $white;
+        background-color: $color-green-2;
+        
+    }
+    
+    &__radio-image {
+        
+        margin-bottom: 1rem;
+        
+        border-radius: 3px;
+        
+    }
+}
+
+.fl-bg-1{
+    background-color: $color-red
+}
+
+.fl-bg-2{
+    background-color: $color-bluegreen
+}
+
+.fl-bg-3{
+    background-color: $color-secondary
+}
