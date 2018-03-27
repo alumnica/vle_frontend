@@ -1,3 +1,15 @@
+.highlight {
+    background-color: $color-yellow;
+    display: inline;
+    
+}
+
+.pregunta-2{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: .5rem;
+    font-weight: bold;
+}
 .first-q-form {
 
     [type='checkbox'] + label,
@@ -8,6 +20,7 @@
     
     &__container{
         @include xy-grid;
+        
     padding: 1rem 0;
     @include breakpoint(medium){
         
