@@ -19,7 +19,7 @@ window.swal = swal;
 
 //masonry grid
 
-import Masonry from 'masonry-layout';
+import masonry from 'masonry-layout';
 
 //fontawesome
 
@@ -28,6 +28,9 @@ import faStar from '@fortawesome/fontawesome-free-solid/faStar';
 
 fontawesome.library.add(faStar);
 
+// flip
+
+import flip from 'flip';
 
 import Foundation from 'foundation-sites';
 // If you want to pick and choose which modules to include, comment out the above and uncomment
@@ -54,7 +57,8 @@ $(document).ready(function(){
         items:4,
         dots:false,
     });
-    
+
+     
 
 
   });
@@ -62,14 +66,19 @@ $(document).ready(function(){
 
 $(document).foundation();
 
+$(function($) {
+  $(".card").flip({
+    // trigger: 'hover'
+  }); 
+});
 
 $('.title-bar').on('sticky.zf.stuckto:top', function(){
     $(this).addClass('shrink');
   }).on('sticky.zf.unstuckfrom:top', function(){
     $(this).removeClass('shrink');
-  })
+  });
 
-
+  
 // var hamburger = document.querySelector(".hamburger");
 // // On click
 // hamburger.addEventListener("click", function() {
