@@ -12,23 +12,21 @@
 </head>
 
 <body>
-  <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
 
+  <div class="off-canvas off-canvas__main-menu caps position-left" id="offCanvasLeft" data-off-canvas data-transition="overlap">
     {{>menu}}
-
   </div>
-  
+
 
   <div class="off-canvas-content" data-off-canvas-content>
+
     
-    <div class="grid-y medium-grid-frame">
-      {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-      {{>nav}}
-      {{> body}}
-      
-    </div>
-  
-  <script src="{{root}}assets/js/app.js"></script>
+    {{> nav}}
+     
+    {{> body}}
+         
+
+    <script src="{{root}}assets/js/app.js"></script>
 </body>
 
 </html>

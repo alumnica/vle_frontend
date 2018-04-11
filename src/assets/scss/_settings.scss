@@ -76,7 +76,6 @@ $color-violet: #b52067;
 // 1. Global
 // ---------
 
-
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
@@ -144,7 +143,7 @@ $block-grid-max: 8;
 // ------------------
 
 $header-font-family: 'Bryant', sans-serif;
-$header-font-weight: $global-weight-normal;
+$header-font-weight: 700;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;

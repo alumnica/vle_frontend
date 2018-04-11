@@ -7,30 +7,30 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Foundation for Sites</title>
+  <title>Alumnica | Logged in</title>
   <link rel="stylesheet" href="{{root}}assets/css/app.css">
+
 </head>
 
 <body>
-  <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
-
+  <div class="off-canvas off-canvas__main-menu caps position-left" id="offCanvasLeft" data-off-canvas data-transition="overlap">
     {{>menu}}
-
   </div>
+
   <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-transition="overlap">
     {{>profile-menu}}
   </div>
 
   <div class="off-canvas-content" data-off-canvas-content>
+
     
-    <div class="grid-y medium-grid-frame">
-      {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
-      {{>nav-logged-in}}
-      {{> body}}
+      {{> nav-logged-in}}
       
-    </div>
-  
-  <script src="{{root}}assets/js/app.js"></script>
+      {{>body}}
+
+  </div>
+
+    <script src="{{root}}assets/js/app.js"></script>
 </body>
 
 </html>

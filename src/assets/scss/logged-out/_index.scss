@@ -1,0 +1,96 @@
+.off-canvas {
+    // padding: 1rem;
+    font-family: 'Bryant';
+    @include breakpoint(medium){
+        font-size: 1.5rem;
+    }
+
+    &__main-menu {
+        background-color: rgb(255, 255, 255);
+        font-weight: 700;        
+
+
+        a {
+            color: $black;
+            padding-left: 2rem;
+    
+            &:hover,
+            {
+                background-color: $color-orange;
+                color: red;
+            }
+    
+            &:focus{
+                background-color: $color-orange;
+                color: red;
+            }
+        }
+    
+        .indice-menu {
+            background-color: $color-amarillo;
+
+            a{
+                padding-left: 3rem;
+                color: $color-verde;
+            }
+        }
+
+    }
+    
+}
+
+.title-bar {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: $black;
+    width: 100%;
+    z-index: 10;
+    transition: all .25s ease;
+    // height: 4.5em;
+    // .title-bar-right, .title-bar-left {
+    //     transition: padding-top .25s ease;
+    //     padding-top: 1.4em;
+        
+    //   }
+      &.shrink {
+        // height: 3em;
+        padding-top: 0;
+        padding-bottom: 0;
+        .title-bar-right, .title-bar-left {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+    }
+
+    .hamburger{
+        padding: 10px 10px 5px 10px;
+    }
+    
+
+    @include breakpoint(medium){
+        // padding: 0;
+    }
+
+    &-title {
+        color: $black;
+
+    }
+
+    .menu-icon::after {
+        /* the block itself, the first line */
+        background: $color-violet;
+        /* middle and bottom */
+        box-shadow: 0 7px 0 $color-violet, 0 14px 0 $color-violet;
+        /* respect WebKit */
+        -webkit-box-shadow: 0 7px 0 $color-violet, 0 14px 0 $color-violet;
+    }
+
+}
+
+.title-bar-login {
+    background-color: transparent;
+}
+
+.shadow-bar {
+    box-shadow: 0px 3px 5px rgba($black, .1);
+}
+

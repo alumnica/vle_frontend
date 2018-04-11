@@ -5,8 +5,8 @@
 }
 
 .pregunta-2{
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 1rem;
+    // text-align: center;
     margin-top: .5rem;
     font-weight: bold;
 }
@@ -20,6 +20,8 @@
     
     &__container{
         @include xy-grid;
+        @include flex;
+        @include flex-align(center);
         
     padding: 1rem 0;
     @include breakpoint(medium){
@@ -30,10 +32,11 @@
     
 
     &__radio-group{
-       @include xy-cell(6);
-       
-       
-        
+       @include xy-cell(6);    
+    }
+
+    .button-submit{
+        @include xy-cell(6);
     }
 
     &__radio-input {

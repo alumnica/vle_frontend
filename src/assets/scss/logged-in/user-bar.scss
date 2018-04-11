@@ -1,0 +1,13 @@
+.profile-button{
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0);
+    color: $dark-gray;
+    padding: .2rem 1rem;
+    
+
+    &:hover{
+        background-color: $lighter-gray;
+        color: $black;
+    }
+
+}
