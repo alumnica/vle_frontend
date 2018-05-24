@@ -67,10 +67,12 @@
 
 @import "logged-out/index";
 @import "logged-out/login";
+@import "logged-out/splash";
 
 @import "logged-in/user-bar";
 @import "logged-in/dashboard";
 @import "logged-in/ambitos-grid";
+@import "logged-in/materia";
 
 
 @import 'custom';
