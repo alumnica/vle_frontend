@@ -19,7 +19,9 @@ window.swal = swal;
 
 //masonry grid
 
-import masonry from 'masonry-layout';
+import Masonry from 'masonry-layout';
+
+// window.masonry = masonry;
 
 //fontawesome
 
@@ -66,19 +68,36 @@ $(document).ready(function(){
 
 $(document).foundation();
 
-$(function($) {
-  $(".card").flip({
-    // trigger: 'hover'
-  }); 
-});
 
 $('.title-bar').on('sticky.zf.stuckto:top', function(){
-    $(this).addClass('shrink');
-  }).on('sticky.zf.unstuckfrom:top', function(){
-    $(this).removeClass('shrink');
-  });
+  $(this).addClass('shrink');
+}).on('sticky.zf.unstuckfrom:top', function(){
+  $(this).removeClass('shrink');
+});
 
+
+$(document).ready(function(){
   
+  
+    $(".card").flip({
+      // trigger: 'hover'
+    }); 
+  
+  
+  var msnry = createMasonry();
+
+
+  });
+  
+
+function createMasonry() {
+  return new Masonry('.grid', {
+    // options...
+    itemSelector: '.grid-item',
+    gutter: 15,
+    isFitWidth: true,
+  });
+}
 // var hamburger = document.querySelector(".hamburger");
 // // On click
 // hamburger.addEventListener("click", function() {

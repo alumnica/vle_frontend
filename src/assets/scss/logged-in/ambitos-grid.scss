@@ -15,9 +15,10 @@
   
   .grid-item {
     width: 340px;
-    height: 240px;
+    // height: 240px;
     @include breakpoint(medium){
       width: 280px;
+      overflow: hidden;
 
     }
     float: left;
@@ -54,7 +55,7 @@
     }
 
     .back {
-      padding: 1.3rem;
+      padding: 1rem;
       text-align: center;
     }
   }
@@ -93,7 +94,7 @@
       border-radius: 1rem;
       border: solid 3px $white;
       padding: .7rem 1rem;
-      margin: 1.5rem 1rem;
+      margin-top: 1.5rem;
       color: $white;
       background-color:#7252AA;
       display: block;
@@ -125,7 +126,7 @@
       border-radius: 1rem;
       border: solid 3px $white;
       padding: .7rem 1rem;
-      margin: 1.5rem 1rem;
+     margin-top: 1.5rem;
       color: $white;
       background-color:#49A849;
       display: block;
@@ -155,7 +156,7 @@
       border-radius: 1rem;
       border: solid 3px $white;
       padding: .7rem 1rem;
-      margin: 1.5rem 1rem;
+     margin-top: 1.5rem;
       color: $black;
       background-color:#FFD57F;
       display: block;
@@ -185,7 +186,7 @@
       border-radius: 1rem;
       border: solid 3px $white;
       padding: .7rem 1rem;
-      margin: 1.5rem 1rem;
+     margin-top: 1.5rem;
       color: $white;
       background-color:#3246A0;
       display: block;
@@ -215,7 +216,7 @@
         border-radius: 1rem;
         border: solid 3px $white;
         padding: .7rem 1rem;
-        margin: 1.5rem 1rem;
+       margin-top: 1.5rem;
         color: $black;
         background-color:#CBC943;
         display: block;
@@ -245,7 +246,7 @@
       border-radius: 1rem;
       border: solid 3px $white;
       padding: .7rem 1rem;
-      margin: 1.5rem 1rem;
+     margin-top: 1.5rem;
       color: $black;
       background-color:#FFD1AD;
       display: block;
@@ -274,7 +275,7 @@
       border-radius: 1rem;
       border: solid 3px $white;
       padding: .7rem 1rem;
-      margin: 1.5rem 1rem;
+     margin-top: 1.5rem;
       color: $white;
       background-color:#3F3FA8;
       display: block;
@@ -303,7 +304,7 @@
       border-radius: 1rem;
       border: solid 3px $white;
       padding: .7rem 1rem;
-      margin: 1.5rem 1rem;
+     margin-top: 1.5rem;
       color: $white;
       background-color:#1D8277;
       display: block;
@@ -333,7 +334,7 @@
       border-radius: 1rem;
       border: solid 3px $white;
       padding: .7rem 1rem;
-      margin: 1.5rem 1rem;
+     margin-top: 1.5rem;
       color: $black;
       background-color:#87C823;
       display: block;
@@ -363,7 +364,7 @@
       border-radius: 1rem;
       border: solid 3px $white;
       padding: .7rem 1rem;
-      margin: 1.5rem 1rem;
+     margin-top: 1.5rem;
       color: $black;
       background-color:#EED177;
       display: block;
@@ -393,7 +394,7 @@
       border-radius: 1rem;
       border: solid 3px $white;
       padding: .7rem 1rem;
-      margin: 1.5rem 1rem;
+     margin-top: 1.5rem;
       color: $black;
       background-color:#EBB08A;
       display: block;
@@ -422,7 +423,7 @@
       border-radius: 1rem;
       border: solid 3px $white;
       padding: .7rem 1rem;
-      margin: 1.5rem 1rem;
+     margin-top: 1.5rem;
       color: $white;
       background-color:#AC558A;
       display: block;
