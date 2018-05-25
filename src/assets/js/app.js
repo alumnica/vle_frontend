@@ -86,7 +86,6 @@ $(document).ready(function(){
   
   var msnry = createMasonry();
 
-
   });
   
 
@@ -94,7 +93,7 @@ function createMasonry() {
   return new Masonry('.grid', {
     // options...
     itemSelector: '.grid-item',
-    gutter: 15,
+    gutter: 2,
     isFitWidth: true,
   });
 }

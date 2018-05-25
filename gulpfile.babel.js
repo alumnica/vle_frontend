@@ -117,6 +117,8 @@ let webpackConfig = {
 // Combine JavaScript into one file
 // In production, the file is minified
 function javascript() {
+
+  gulp.src('src/assets/js/materias.js').pipe(gulp.dest('dist/assets/js'));
   return gulp.src(PATHS.entries)
     .pipe(named())
     .pipe($.sourcemaps.init())

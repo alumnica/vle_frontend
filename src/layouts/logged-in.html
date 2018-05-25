@@ -9,6 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alumnica | Logged in</title>
   <link rel="stylesheet" href="{{root}}assets/css/app.css">
+  <link rel="shortcut icon" 
+      type="image/png" 
+      href="../assets/media/alumnica-favico.png">
 
 </head>
 
@@ -31,6 +34,9 @@
   </div>
 
     <script src="{{root}}assets/js/app.js"></script>
+    {{#ifpage 'materia'}}
+      <<script src="{{root}}assets/js/materias.js"></script>
+    {{/ifpage}}
 </body>
 
 </html>
