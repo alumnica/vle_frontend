@@ -27,8 +27,10 @@ import Masonry from 'masonry-layout';
 
 import fontawesome from '@fortawesome/fontawesome';
 import faStar from '@fortawesome/fontawesome-free-solid/faStar';
+import faFlagCheckered from '@fortawesome/fontawesome-free-solid/faFlagCheckered'
 
 fontawesome.library.add(faStar);
+fontawesome.library.add(faFlagCheckered);
 
 // flip
 

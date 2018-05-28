@@ -29,20 +29,37 @@
     .block {
         height: 100%;
         width: 100%;
-        text-align: center;
+        
         // background-color: rgba(red, $alpha: .5);
-        img{
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-            max-width: 100%;
-            transition: all .3s;
-            
-            
-        }
+        // position: relative;
 
-        a {
+        .oda-image{
+            height: 100%;
+            width: 100%;
+            display: block;
+            
+            position: relative;
+            img{
+                position: absolute;
+                // bottom: 0;
+                // left: 0;
+                // height: 100px;
+                // width: 100px;
+                top: 50%;
+                transform: translateY(-50%);
+                max-width: 100%;
+                transition: all .3s;
+            }
         }
+        .icon {
+            color:$color-naranja;
+            position: absolute;
+
+
+        }  
+        
+              
+        
 
     }
 }
@@ -53,37 +70,63 @@
 
 
 
-.unopened {
-    filter: grayscale(100%);
-    transition: all 3s;
-    
-    &:hover img {
-        filter: grayscale(0%);
-        transform:translateY(-50%) scale(1.5);
-        transition: all .2s;
-        
+.unopened{
+
+    .oda-image{
+        filter: grayscale(100%);
+        transition: all 2s;
+        &:hover {
+            filter: grayscale(0%);
+            transition: all .2s;
+            
+            img{
+                transform:translateY(-50%) scale(1.5);
+                transition: all .2s;   
+            }
+        }
     }
 }
 
 .in-progress {
-    transition: all .2s;
-    &:hover img {
-        transform: rotateY(180deg) translateY(-50%) scale(1.5);
-        transition: all 1s;
-        
-    }
 
+    .oda-image{
+        
+        &:hover{
+            img {               
+                transform:translateY(-50%) scale(1.5);
+            }
+        }
+    }
 }
 
 .completed {
-
-    
+    .oda-image{
+        
+        &:hover{
+            img {               
+                transform:translateY(-50%) scale(1.5);
+            }
+        }
+    }  
     
 }
 
 .finalized {
+    .oda-image{
+        
+        &:hover{
+            img {               
+                transform:translateY(-50%) scale(1.5);
+            }
+        }
+    }
 
 }
 
 
-  
+.wobble-hor-bottom {
+	-webkit-animation: wobble-hor-bottom 0.8s both;
+	        animation: wobble-hor-bottom 0.8s both;
+}
+
+
