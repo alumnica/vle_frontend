@@ -24,7 +24,7 @@
     {{>profile-menu}}
   </div>
 
-  <div class="off-canvas-content" data-off-canvas-content>
+  <div class="off-canvas-content" data-off-canvas-content style="height: 100vh">
 
     
       {{> nav-logged-in}}
@@ -35,8 +35,11 @@
 
     <script src="{{root}}assets/js/app.js"></script>
     {{#ifpage 'materia'}}
-      <<script src="{{root}}assets/js/materias.js"></script>
+      <script src="{{root}}assets/js/materias.js"></script>
     {{/ifpage}}
+    <!-- {{#ifpage 'ambitos-grid'}} -->
+      <script src="{{root}}assets/js/ambitos-grid.js"></script>
+    <!-- {{/ifpage}} -->
 </body>
 
 </html>

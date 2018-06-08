@@ -15,13 +15,11 @@ window.$ = $;
 import swal from 'sweetalert2';
 
 window.swal = swal;
-
-
 //masonry grid
 
 import Masonry from 'masonry-layout';
 
-// window.masonry = masonry;
+window.Masonry = Masonry;
 
 //fontawesome
 
@@ -31,6 +29,11 @@ import faFlagCheckered from '@fortawesome/fontawesome-free-solid/faFlagCheckered
 
 fontawesome.library.add(faStar);
 fontawesome.library.add(faFlagCheckered);
+
+
+//jquery ui 
+
+// import 'jquery-ui/ui/widgets/tooltip';
 
 // flip
 
@@ -78,27 +81,7 @@ $('.title-bar').on('sticky.zf.stuckto:top', function(){
 });
 
 
-$(document).ready(function(){
-  
-  
-    $(".card").flip({
-      // trigger: 'hover'
-    }); 
-  
-  
-  var msnry = createMasonry();
 
-  });
-  
-
-function createMasonry() {
-  return new Masonry('.grid', {
-    // options...
-    itemSelector: '.grid-item',
-    gutter: 2,
-    isFitWidth: true,
-  });
-}
 // var hamburger = document.querySelector(".hamburger");
 // // On click
 // hamburger.addEventListener("click", function() {
@@ -114,3 +97,8 @@ function createMasonry() {
 //     confirmButtonText: 'Cool'
 //   })
 
+window.addEventListener("load",function() {
+  setTimeout(function(){
+      window.scrollTo(0, 1);
+  }, 0);
+});

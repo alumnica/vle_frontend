@@ -1,0 +1,24 @@
+.color-a {
+    background-color:$color-amarillo;
+}
+
+.height {
+    height: calc(100% - 3.2rem);
+}
+
+
+
+.oda-x {
+    
+    height:100%
+}
+
+.oda-left{
+    @include xy-cell(3);
+}
+
+.oda-right{
+    @include xy-cell(9);
+    // overflow: scroll;
+}
+

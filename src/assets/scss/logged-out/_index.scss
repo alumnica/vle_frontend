@@ -40,11 +40,15 @@
 }
 
 .title-bar {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #fcfcfc;
     color: $black;
     width: 100%;
     z-index: 10;
     transition: all .25s ease;
+    height: 3.2rem;
+    position: sticky;
+    top: 0;
+    
     // height: 4.5em;
     // .title-bar-right, .title-bar-left {
     //     transition: padding-top .25s ease;
