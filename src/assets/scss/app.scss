@@ -61,6 +61,7 @@
 
 @import 'owl.carousel';
 @import 'owl.theme.default';
+// @import 'tooltip.css';
 
 @import "components/utilities";
 @import "components/first-q-forms";
@@ -79,3 +80,5 @@
 
 @import 'custom';
 @import 'hamburgers';
+
+@import 'vendors/jquery.fullpage'

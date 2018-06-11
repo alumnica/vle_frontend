@@ -33,50 +33,67 @@ fontawesome.library.add(faFlagCheckered);
 
 //jquery ui 
 
-// import 'jquery-ui/ui/widgets/tooltip';
+import 'jquery-ui/ui/widgets/tooltip';
 
 // flip
 
 import flip from 'flip';
+
+
+//fullpage.js
+
+import fullpage from 'fullpage.js';
 
 import Foundation from 'foundation-sites';
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 //import './lib/foundation-explicit-pieces';
 
-$(document).ready(function(){
-    $('#materias-slider').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:false,
-        items:1,
-        dots:false,
-        autoplay: true,
-        autoplayTimeout:3000,
-        autoplayHoverPause:true,
-    });
 
-
-    $('#insignias-slider').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:false,
-        items:4,
-        dots:false,
-    });
-
-     
-
-
+$(document).ready(function () {
+  $('#fullpage').fullpage({
+    anchors: ['firstPage', 'secondPage', '3rdPage'],
+    // sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+    navigation: true,
+    navigationPosition: 'left',
+    // navigationTooltips: ['First page', 'Second page', 'Third and last page'],
   });
+});
+
+$(document).ready(function () {
+  $('#materias-slider').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    items: 1,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+  });
+
+
+  $('#insignias-slider').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    items: 4,
+    dots: false,
+  });
+
+
+
+  $(document).tooltip();
+
+});
 
 
 $(document).foundation();
 
 
-$('.title-bar').on('sticky.zf.stuckto:top', function(){
+$('.title-bar').on('sticky.zf.stuckto:top', function () {
   $(this).addClass('shrink');
-}).on('sticky.zf.unstuckfrom:top', function(){
+}).on('sticky.zf.unstuckfrom:top', function () {
   $(this).removeClass('shrink');
 });
 
@@ -97,8 +114,8 @@ $('.title-bar').on('sticky.zf.stuckto:top', function(){
 //     confirmButtonText: 'Cool'
 //   })
 
-window.addEventListener("load",function() {
-  setTimeout(function(){
-      window.scrollTo(0, 1);
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    window.scrollTo(0, 1);
   }, 0);
 });
