@@ -24,12 +24,17 @@ window.Masonry = Masonry;
 //fontawesome
 
 import fontawesome from '@fortawesome/fontawesome';
-import faStar from '@fortawesome/fontawesome-free-solid/faStar';
-import faFlagCheckered from '@fortawesome/fontawesome-free-solid/faFlagCheckered'
+import solid from '@fortawesome/fontawesome-free-solid';
 
-fontawesome.library.add(faStar);
-fontawesome.library.add(faFlagCheckered);
+// import faStar from '@fortawesome/fontawesome-free-solid/faStar';
+// import faFlagCheckered from '@fortawesome/fontawesome-free-solid/faFlagCheckered';
+// import faUndoAlt from '@fortawesome/fontawesome-free-solid/faUndoAlt';
 
+// fontawesome.library.add(faStar);
+// fontawesome.library.add(faFlagCheckered);
+// fontawesome.library.add(faUndoAlt);
+
+fontawesome.library.add(solid)
 
 //jquery ui 
 
@@ -57,6 +62,7 @@ $(document).ready(function () {
     navigation: true,
     navigationPosition: 'left',
     // navigationTooltips: ['First page', 'Second page', 'Third and last page'],
+    paddingBottom: '5rem',
   });
 });
 
