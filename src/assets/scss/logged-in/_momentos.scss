@@ -1,0 +1,225 @@
+.nav-items {
+    // position: absolute;
+    // height: 100%;
+    // width: 100%;
+    // top: 0;
+    // z-index: 10;
+
+    .prev-arrow{
+        position: absolute;
+        top: 47%;
+        left: 0;
+        font-size: 3rem;
+        color: $white;
+        background-color: lighten($color-violet, $amount: 40);
+        width: 3rem;
+        text-align: left;
+        padding-top: .5rem;
+        height: 5rem;
+        border-top-right-radius: 2.5rem;
+        border-bottom-right-radius: 2.5rem;
+        @include breakpoint (800px){
+            text-align: right;
+            width: 5.5rem;
+            padding-right: 1rem;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: lighten($color-violet, 20);
+        }
+    }
+
+    .next-arrow{
+        position: absolute;
+        top: 47%;
+        right: 0;
+        font-size: 3rem;
+        color: $white;
+        background-color: lighten($color-violet, $amount: 40);
+        width: 3rem;
+        text-align: right;
+        padding-top: .5rem;
+        height: 5rem;
+        border-top-left-radius: 2.5rem;
+        border-bottom-left-radius: 2.5rem;
+        @include breakpoint (800px){
+            width: 5.5rem;
+            text-align: left;
+            padding-left: 1rem;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: lighten($color-violet, 20);
+        }
+    }
+
+}
+
+
+
+
+.mom-grid-btn{
+    background-color: $light-gray;
+    border: solid 4px $white;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: .3rem;
+
+
+    // position: sticky;
+    
+    position: absolute;
+    bottom: 2rem;
+    // bottom: 6rem;
+    left: .3rem;
+    z-index: 11;
+
+    color: $color-violet;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    @include breakpoint(1000px){
+        width: 5rem;
+        height: 5rem;
+        border-radius: 5rem;
+        font-size: 2rem;
+        padding-top: .9rem;
+        bottom: 2rem;
+        // bottom: 2rem;
+        left: 2rem;
+    }
+}
+
+.mom-return-btn {
+    background-color: $light-gray;
+    border: solid 4px $white;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: .3rem;
+    position: absolute;
+    bottom: 2rem;
+    right: .5rem;
+    z-index: 11;
+    color: $color-violet;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    @include breakpoint(1000px){
+        width: 5rem;
+        height: 5rem;
+        border-radius: 5rem;
+        font-size: 2rem;
+        padding-top: .9rem;
+        top: 85vh;
+        right: 2rem;
+    }
+}
+
+.screen-height {
+    height: calc(100vh - 3.2rem);
+}
+
+.cont-height{
+    height: 100%;
+}
+
+.h5p-cont {
+    background-color: lighten($primary-color, 40);
+    height: 100%;
+    padding: .5rem;
+    @include breakpoint(800px){
+        height: 95%;
+        padding: 1rem;
+    }
+    border-radius: 1rem;
+    position: relative;
+
+    .the-h5p {
+        background-color: $white;
+        height: 100%;
+        width: 100%;
+    }
+
+    .moments{
+        position: absolute;
+        top: -2rem;
+        @include breakpoint(800px){
+            top: -1.5rem;
+        }
+        left: 50%;
+        transform: translateX(-50%);
+        
+        
+        
+    }
+
+}
+
+.single-mom{
+    display: inline-block;
+    margin: 0 .5rem;
+    background-color: lighten($primary-color, 40);
+    border: solid 2px $color-peri;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1.5rem;
+    @include breakpoint(800px){
+        border: solid 3px $color-peri;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 3rem;
+    }
+}
+
+.single-mom.active-mom {
+    transform: scale(1.5)
+}
+
+
+
+
+
+
+
+#m1::after{
+        content: "";
+        width: 70%;
+        height: 70%;
+        display: inline-block;
+        background-color: $color-bluegreen;
+        border-radius: 50%;
+        margin: 0 0 0 3px;
+        @include breakpoint(800px){
+            margin: 6px 0 0 6px;
+        }
+}
+
+#m2::after{
+        content: "";
+        width: 70%;
+        height: 70%;
+        display: inline-block;
+        background-color: $color-yellow;
+        border-radius: 50%;
+        margin: 0 0 0 3px;
+        @include breakpoint(800px){
+            margin: 6px 0 0 6px;
+        }
+}
+
+#m3::after{
+        content: "";
+        width: 70%;
+        height: 70%;
+        display: inline-block;
+        background-color: $color-green;
+        border-radius: 50%;
+        margin: 0 0 0 3px;
+        @include breakpoint(800px){
+            margin: 6px 0 0 6px;
+        }
+}

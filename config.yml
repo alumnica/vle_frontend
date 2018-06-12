@@ -33,3 +33,4 @@ PATHS:
   entries:
     - "src/assets/js/app.js"
     - "src/assets/js/!(materias).js"
+    - "src/assets/js/!(oda-view).js"
