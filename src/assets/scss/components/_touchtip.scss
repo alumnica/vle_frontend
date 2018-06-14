@@ -28,7 +28,7 @@
     }
 
     .thetip:after, .thetip:before {
-        top: 99.5%;
+        top: 100%;
         left: 50%;
         border: solid transparent;
         content: " ";
@@ -46,7 +46,7 @@
     }
     .thetip:before {
         border-color: rgba(255, 255, 255, 0);
-        border-top-color: #fff;
+        border-top-color: rgb(255, 255, 255);
         border-width: 24px;
         margin-left: -24px;
     }
