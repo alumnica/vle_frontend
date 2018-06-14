@@ -1,0 +1,117 @@
+.block {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    // background-color: rgba(red, $alpha: .5);
+    // position: relative;
+    cursor: pointer;
+
+    
+
+    .oda-image-1{
+        height: 100%;
+        width: 100%;
+        display: block;
+        
+        position: relative;
+        img{
+            position: absolute;
+            // bottom: 0;
+            // left: 0;
+            // height: 100px;
+            // width: 100px;
+            top: 50%;
+            transform: translateY(-50%);
+            max-width: 100%;
+            transition: all .3s;
+        }
+    }
+
+    .thetip:after, .thetip:before {
+        top: 99.5%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+    
+    .thetip:after {
+        border-color: rgba(0, 0, 0, 0);
+        border-top-color: rgba(0, 0, 0, 0.7);
+        border-width: 20px;
+        margin-left: -20px;
+    }
+    .thetip:before {
+        border-color: rgba(255, 255, 255, 0);
+        border-top-color: #fff;
+        border-width: 24px;
+        margin-left: -24px;
+    }
+    
+    .thetip {
+        position: absolute;
+        top: -70%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 7rem;
+        background-color: rgba(0, 0, 0, 0.7);
+        text-align: center;
+        padding: .3rem;
+        border-radius: 1rem;
+        border: solid 3px $white;
+        color: $white;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+
+        .tip-title{
+            font-size: .8rem;
+            color: $color-amarillo;
+        }
+
+        .oda-progress{
+            .gold{
+                color: gold;
+            }
+
+            .clip{
+                color: $medium-gray;
+            }
+        }
+
+        .play-btn {
+            display: block;
+            color: $color-amarillo;
+            width: 3rem;
+            height: 3rem;
+            background-color: $color-peri;
+            border-radius: 3rem;
+            border: solid 2px $white;
+            margin: 0 auto;
+            padding-top: .4rem;
+            padding-left: .2rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transform: scale(.9);
+            transition: all .2s;
+
+            &:hover{
+                transform: scale(1);
+            }
+        }
+
+    }                   
+}
+
+.in-progress {
+
+    .oda-image-1{
+        
+        &:hover{
+            img {               
+                transform:translateY(-50%) scale(1.5);
+            }
+        }
+    }
+}

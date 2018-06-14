@@ -34,11 +34,14 @@
   </div>
 
     <script src="{{root}}assets/js/app.js"></script>
-    {{#ifpage 'materia'}}
+    {{#ifpage 'materia' 'materia.1'}}
       <script src="{{root}}assets/js/materias.js"></script>
     {{/ifpage}}
     {{#ifpage 'oda' 'oda-1'}}
       <script src="{{root}}assets/js/oda-view.js"></script>
+    {{/ifpage}}
+    {{#ifpage 'materia.1'}}
+      <script src="{{root}}assets/js/touchtip.js"></script>
     {{/ifpage}}
     <!-- {{#ifpage 'ambitos-grid'}} -->
       <script src="{{root}}assets/js/ambitos-grid.js"></script>
