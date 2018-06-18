@@ -102,3 +102,33 @@
 }
 
 
+// splash 2
+.splash-container{
+   
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-image:url(../media/wait_landing_world.jpg);
+    //      radial-gradient(
+    //     circle closest-side,        
+    //    #201F41 60%,#0E0D13);
+        // url(../media/wait_landingplanet.png);
+    
+    
+    
+    height: 100vh;
+    // widows: 100px;
+}
+.splash-image{
+    background-image: url(../media/wait_landingplanet.png);
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat;
+    height: 100%;
+    // padding-top: 10%;
+    // top: 25%;
+    // position: relative;
+    // max-width: 1920x;
+    // min-width: 600px;
+    // height: 100vh;
+}
