@@ -124,12 +124,12 @@
 }
 
 
-#fp-nav.left {
-    left: 5px !important;
-    @include breakpoint(1000px){
-        left: calc((100vw - 1000px) / 2) !important;
-    }
-}
+// #fp-nav.left {
+//     left: 5px !important;
+//     @include breakpoint(1000px){
+//         left: calc((100vw - 1000px) / 2) !important;
+//     }
+// }
 
 .oda-title{
     text-align: center;

@@ -25,6 +25,7 @@ window.Masonry = Masonry;
 
 import fontawesome from '@fortawesome/fontawesome';
 import solid from '@fortawesome/fontawesome-free-solid';
+import regular from '@fortawesome/fontawesome-free-regular';
 
 // import faStar from '@fortawesome/fontawesome-free-solid/faStar';
 // import faFlagCheckered from '@fortawesome/fontawesome-free-solid/faFlagCheckered';
@@ -34,11 +35,13 @@ import solid from '@fortawesome/fontawesome-free-solid';
 // fontawesome.library.add(faFlagCheckered);
 // fontawesome.library.add(faUndoAlt);
 
-fontawesome.library.add(solid)
+fontawesome.library.add(solid);
+fontawesome.library.add(regular);
 
 //jquery ui 
 
 import 'jquery-ui/ui/widgets/tooltip';
+import 'jquery-ui/ui/widgets/selectable';
 
 // flip
 

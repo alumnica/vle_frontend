@@ -2,39 +2,351 @@
 layout: logged-in 
 name: For logged in Users 
 ---
+<div class="scroll-menu">
+    <ul id="evalMenu">
+        <li data-menuanchor="firstPage" class="active"><a href="#firstPage"><i class="far fa-bookmark"></i></a></li>
+        <li data-menuanchor="secondPage"><a href="#secondPage"><i class="far fa-circle"></i></a></li>
+        <li data-menuanchor="thirdPage"><a href="#thirdPage"><i class="far fa-circle"></i></a></li>
+        <li data-menuanchor="fourthPage"><a href="#fourthPage"><i class="far fa-circle"></i></a></li>
+        <li data-menuanchor="fifthPage"><a href="#fifthPage"><i class="far fa-circle"></i></a></li>
+        <li data-menuanchor="sixthPage"><a href="#sixthPage"><i class="far fa-circle"></i></a></li>
+        <li data-menuanchor="seventhPage"><a href="#sevenththPage"><i class="far fa-circle"></i></a></li>
+        <li data-menuanchor="eighthPage"><a href="#eighthPage"><i class="far fa-circle"></i></a></li>
+        <li data-menuanchor="ninethPage"><a href="#ninethPage"><i class="far fa-circle"></i></a></li>
+        <li data-menuanchor="tenthPage"><a href="#tenthPage"><i class="far fa-circle"></i></a></li>
+        <li data-menuanchor="eleventhPage"><a href="#eleventhPage"><i class="far fa-circle"></i></a></li>
+        <li data-menuanchor="twelvethPage" ><a href="#" id="score"><i class="fas fa-bookmark"></i></a></li>
+        <!-- <li data-menuanchor="twelvethPage"><a href="#twelvethPage"><i class="fas fa-bookmark"></i></a></li> -->
+    </ul>
+</div>
 <div id="evaluate">
     <div class="section">
         <div class="question">
-            <p class="the-text">Esta es un a pregunta de opcion multiple y esto es texto extra q no significa nada. La tienes que contestar antes de avanzar!</p>
-            <div class="multi-answers">
-                <ul>
-                    <li>Respuesta 1</li>
-                    <li>Respuesta 4 mas larga</li>
-                    <li>Respuesta 3 algo mas corto pero mas largo</li>
-                    <li>Respuesta 2</li>
-                </ul>
-        </div>
-        <div class="next">
-            <button class="button success u-margin-top-small" type="button">Siguiente</button>
+           
+                <div class="eval-intro">
+                    <p class="eval-intro_title">Esto es una evaluacions. Avanza con el boton verde de siguiente.
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequiadipisicing elit. Sequi inventore esse eligendi maxime excepturi enim tenetur sunt, sed expedita quis!</p>
+                    <p class="h3">Suerte!</p>
+                </div>
+           
+            <div class="next">
+                <button class="button success large u-margin-top-small" type="button"><i class="fa fa-check"></i> Comenzar la Evaluación</button>
+            </div>
         </div>
     </div>
-</div>
-<div class="section">
-        <div class="question">
-                <p class="the-text">Selecciona multiples respuestas y esto es texto extra q no significa nada. La tienes que contestar antes de avanzar!</p>
-                <div class="multi-multi">
+    <div class="section">
+        <div class="question" question-type="relationship" pk="15">
+            <div class="the-text">
+                Sunt quo, possimus minima numquam debitis sit. Consequuntur, aspernatur libero. Veritatis harum quia laboriosam quisquam
+                amet ratione?
+            </div>
+            <div class="match">
+                <div class="left-side">
                     <ul>
-                        <li>Respuesta 1</li>
-                        <li>Respuesta 4 mas larga</li>
-                        <li>Respuesta 3 algo mas corto pero mas largo</li>
-                        <li>Respuesta 2</li>
+                        <li class="ls">Match 1</li>
+                        <li class="ls">Wakaka</li>
+                        <li class="ls">YOLO</li>
+                        <li class="ls">360 No-scope</li>
                     </ul>
+                </div>
+                <div class="right-side">
+                    <ul>
+                        <li class="rs">OMG</li>
+                        <li class="rs">Memes para todos</li>
+                        <li class="rs">Una dos tres catorce</li>
+                        <li class="rs">Here we come!</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="reset">
+                <i class="fas fa-eraser er-button"></i>
             </div>
             <div class="next">
                 <button class="button success u-margin-top-small" type="button">Siguiente</button>
             </div>
         </div>
+
+    </div>
+    <div class="section">
+            <div class="question" question-type="relationship" pk="16">
+                <div class="the-text">
+                    Sunt quo, possimus minima numquam debitis sit. Consequuntur, aspernatur libero. Veritatis harum quia laboriosam quisquam
+                    amet ratione?
+                </div>
+                <div class="match">
+                    <div class="left-side">
+                        <ul>
+                            <li class="ls">Match 1</li>
+                            <li class="ls">Wakaka</li>
+                            <li class="ls">YOLO</li>
+                            <li class="ls">360 No-scope</li>
+                        </ul>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                            <li class="rs">OMG</li>
+                            <li class="rs">Memes para todos</li>
+                            <li class="rs">Una dos tres catorce</li>
+                            <li class="rs">Here we come!</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="reset">
+                    <i class="fas fa-eraser er-button"></i>
+                </div>
+                <div class="next">
+                    <button class="button success u-margin-top-small" type="button">Siguiente</button>
+                </div>
+            </div>
+    
+        </div>
+    <div class="section">
+        <div class="question" question-type="multiple_option" pk="9">
+            <p class="the-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum iusto soluta quibusdam totam aut aspernatur!</p>
+    
+            <div class="radio-choice">
+                <input type="radio" value="0" id="YOLO" name="secondq" />
+                <label for="YOLO">YOLO</label>
+            </div>
+            <div class="radio-choice">
+                <input type="radio" value="1"  id="Lo" name="secondq" />
+                <label for="Lo">Lo que sea</label>
+            </div>
+            <div class="radio-choice">
+                <input type="radio" value="2" id="MVP" name="secondq" />
+                <label for="MVP">MVP</label>
+            </div>
+            <div class="radio-choice">
+                <input type="radio" value="3" id="MC" name="secondq" />
+                <label for="MC">MC</label>
+            </div>
+    
+             <div class="next">
+                 <button class="button success u-margin-top-small" type="button">Siguiente</button>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="question" question-type="multiple_option" pk="12">
+            <p class="the-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum iusto soluta quibusdam totam aut aspernatur!</p>
+    
+            <div class="radio-choice">
+                <input type="radio" value="0" id="huey" name="drone" />
+                <label for="huey">Huey</label>
+            </div>
+            <div class="radio-choice">
+                <input type="radio" value="1" id="Wally" name="drone" />
+                <label for="Wally">Wally</label>
+            </div>
+            <div class="radio-choice">
+                <input type="radio" value="2" id="Jackson" name="drone" />
+                <label for="Jackson">Jackson</label>
+            </div>
+            <div class="radio-choice">
+                <input type="radio" value="3" id="Norman" name="drone" />
+                <label for="Norman">Norman</label>
+            </div>
+    
+             <div class="next">
+                 <button class="button success u-margin-top-small" type="button">Siguiente</button>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="question" question-type="multiple_answer" pk="60">
+            <p class="the-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam modi deserunt tempora dolor id perspiciatis fugit
+                eveniet dolore nostrum repudiandae quasi, voluptatibus deleniti iste iusto.</p>
+    
+            <div class="checkbox-choice">
+                <input type="checkbox" id="scales" name="feature" value="0" />
+                <label for="scales">Scales</label>
+            </div>
+    
+            <div class="checkbox-choice">
+                <input type="checkbox" id="horns" name="feature" value="1" />
+                <label for="horns">Horns</label>
+            </div>
+    
+            <div class="checkbox-choice">
+                <input type="checkbox" id="claws" name="feature" value="2" />
+                <label for="claws">Claws</label>
+            </div>
+    
+            <div class="next">
+                <button class="button success u-margin-top-small" type="button">Siguiente</button>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="question" question-type="multiple_answer" pk="61">
+            <p class="the-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam modi deserunt tempora dolor id perspiciatis fugit
+                eveniet dolore nostrum repudiandae quasi, voluptatibus deleniti iste iusto.</p>
+            <div class="checkbox-choice">
+                <input type="checkbox" id="Option1" name="noseque" value="0" />
+                <label for="Option1">Option1</label>
+            </div>
+    
+            <div class="checkbox-choice">
+                <input type="checkbox" id="Option2" name="noseque" value="1" />
+                <label for="Option2">Option2</label>
+            </div>
+    
+            <div class="checkbox-choice">
+                <input type="checkbox" id="LastOption" name="noseque" value="2" />
+                <label for="LastOption">LastOption</label>
+            </div>
+            <div class="next">
+                <button class="button success u-margin-top-small" type="button">Siguiente</button>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="question" question-type="numeric_answer" pk="2">
+            <div class="the-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident velit accusantium voluptatibus nostrum iure accusamus.
+                <br> Entonces, ¿cuanto es 1+1?
+            </div>
+            <div class="number-answer">
+                <input type="number">
+            </div>
+            <div class="next">
+                <button class="button success u-margin-top-small" type="button">Siguiente</button>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="question" question-type="numeric_answer" pk="33">
+            <div class="the-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident velit accusantium voluptatibus nostrum iure accusamus.
+                <br> Entonces, ¿cuanto es 1+1?
+            </div>
+            <div class="number-answer">
+                <input type="number">
+            </div>
+            <div class="next">
+                <button class="button success u-margin-top-small" type="button">Siguiente</button>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="question" question-type="pulldown_list" pk="102">
+            <div class="the-text">
+                Algo que algo que aglo esto es el texto que te dice que hagas algo
+            </div>
+            <div class="the-subtext">
+                Esto es el subtexto que te ayuda a resolver o algo algo algo.
+            </div>
+            <div class="desp-secc">
+                <div class="grid-x">
+                    <div class="cell small-6">
+                        <ul>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Cosa due whatever yolo.</li>
+                            <li>Le Cose ququque</li>
+                        </ul>
+                    </div>
+                    <div class="cell small-6">
+                        <select name="0">
+                            <option disabled selected value> -- select an option -- </option>
+                            <option value="0">Una</option>
+                            <option value="1">YEAH YEAH</option>
+                            <option value="2">Forever</option>
+                            <option value="3">whatever</option>
+                        </select>
+                        <select name="1">
+                            <option disabled selected value> -- select an option -- </option>
+                            <option value="0">Una</option>
+                            <option value="1">YEAH YEAH</option>
+                            <option value="2">Forever</option>
+                            <option value="3">whatever</option>
+                        </select>
+                        <select name="2">
+                            <option disabled selected value> -- select an option -- </option>
+                            <option value="0">Una</option>
+                            <option value="1">YEAH YEAH</option>
+                            <option value="2">Forever</option>
+                            <option value="3">whatever</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="next">
+                <button class="button success  u-margin-top-small" type="button">Siguitente</button>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="question" question-type="pulldown_list" pk="333">
+            <div class="the-text">
+                Algo que algo que aglo esto es el texto que te dice que hagas algo
+            </div>
+            <div class="the-subtext">
+                Esto es el subtexto que te ayuda a resolver o algo algo algo.
+            </div>
+            <div class="desp-secc">
+                <div class="grid-x">
+                    <div class="cell small-6">
+                        <ul>
+                            <li>Lorem ipsum dolor sit.</li>
+                            <li>Cosa due whatever yolo.</li>
+                            <li>Le Cose ququque</li>
+                        </ul>
+                    </div>
+                    <div class="cell small-6">
+                        <select name="primera">
+                            <option disabled selected value> -- select an option -- </option>
+                            <option value="0">Una</option>
+                            <option value="1">YEAH YEAH</option>
+                            <option value="2">Forever</option>
+                            <option value="3">whatever</option>
+                        </select>
+                        <select name="segunda">
+                            <option disabled selected value> -- select an option -- </option>
+                            <option value="0">Una</option>
+                            <option value="1">YEAH YEAH</option>
+                            <option value="2">Forever</option>
+                            <option value="3">whatever</option>
+                        </select>
+                        <select name="tercera">
+                            <option disabled selected value> -- select an option -- </option>
+                            <option value="0">Una</option>
+                            <option value="1">YEAH YEAH</option>
+                            <option value="2">Forever</option>
+                            <option value="3">whatever</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="end">
+                <button class="button success large u-margin-top-small" type="button" data-open="exampleModal1">Terminar Evaluación</button>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="the-answer">
+            The score goes here
+        </div>
+    </div>
 </div>
-<div class="section">Some section</div>
-<div class="section">Some section</div>
+<div class="eval-inputs">
+    <form>
+        <input type="text" id="relationship">
+        <input type="text" id="multiple_option">
+        <input type="text" id="multiple_answer">
+        <input type="text" id="numeric_answer">
+        <input type="text" id="pulldown_list">
+    </form>
+
 </div>
+
+<div class="reveal" id="exampleModal1" data-reveal>
+        <p class="h4">Terminar Evaluación</p>
+        <p> ¿Estas seguro que deseas terminar la evaluacion?</p>
+        <button type="button" class="button" data-close id="end-eval">Si</button>
+        <button type="button" class="button alert" data-close>No</button>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
