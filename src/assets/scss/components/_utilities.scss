@@ -46,3 +46,12 @@ $color-violeta: #b52067;
 $color-azul-obscuro: #625fa6;
 $color-verde: #58968a;
 $color-verde-limon: #adcd65;
+
+
+@mixin vertical-align($position: relative) {
+    position: $position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }

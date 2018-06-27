@@ -10,7 +10,7 @@ name: For logged in Users
         <li data-menuanchor="fourthPage"><a href="#fourthPage"><i class="far fa-circle"></i></a></li>
         <li data-menuanchor="fifthPage"><a href="#fifthPage"><i class="far fa-circle"></i></a></li>
         <li data-menuanchor="sixthPage"><a href="#sixthPage"><i class="far fa-circle"></i></a></li>
-        <li data-menuanchor="seventhPage"><a href="#sevenththPage"><i class="far fa-circle"></i></a></li>
+        <li data-menuanchor="seventhPage"><a href="#seventhPage"><i class="far fa-circle"></i></a></li>
         <li data-menuanchor="eighthPage"><a href="#eighthPage"><i class="far fa-circle"></i></a></li>
         <li data-menuanchor="ninethPage"><a href="#ninethPage"><i class="far fa-circle"></i></a></li>
         <li data-menuanchor="tenthPage"><a href="#tenthPage"><i class="far fa-circle"></i></a></li>
@@ -21,17 +21,16 @@ name: For logged in Users
 </div>
 <div id="evaluate">
     <div class="section">
-        <div class="question">
-           
+        <div class="question">           
                 <div class="eval-intro">
                     <p class="eval-intro_title">Esto es una evaluacions. Avanza con el boton verde de siguiente.
                     </p>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequiadipisicing elit. Sequi inventore esse eligendi maxime excepturi enim tenetur sunt, sed expedita quis!</p>
-                    <p class="h3">Suerte!</p>
+                    <p class="h4">Suerte!</p>
                 </div>
            
             <div class="next">
-                <button class="button success large u-margin-top-small" type="button"><i class="fa fa-check"></i> Comenzar la Evaluación</button>
+                <button class="button success large" type="button"><i class="fa fa-check"></i> Comenzar la Evaluación</button>
             </div>
         </div>
     </div>
@@ -41,27 +40,29 @@ name: For logged in Users
                 Sunt quo, possimus minima numquam debitis sit. Consequuntur, aspernatur libero. Veritatis harum quia laboriosam quisquam
                 amet ratione?
             </div>
-            <div class="match">
-                <div class="left-side">
-                    <ul>
-                        <li class="ls">Match 1</li>
-                        <li class="ls">Wakaka</li>
-                        <li class="ls">YOLO</li>
-                        <li class="ls">360 No-scope</li>
-                    </ul>
+            <div class="grid-x grid-margin-x align-center">
+                    <div class="cell small-4 medium-6 left-side">
+                        <ul>
+                            <li class="ls">Match 1</li>
+                            <li class="ls">Wakaka</li>
+                            <li class="ls">YOLO</li>
+                            <li class="ls">360 No-scope</li>
+                        </ul>
+                    </div>
+                    <div class="cell small-4 medium-6 right-side">
+                        <ul>
+                            <li class="rs">OMG</li>
+                            <li class="rs">Memes para todos</li>
+                            <li class="rs">Una dos tres catorce</li>
+                            <li class="rs">Here we come!</li>
+                        </ul>
+                    </div>
+                    <div class="cell small-4 medium-6 align-self-middle">
+                        <div class="reset">
+                            <i class="fas fa-eraser er-button"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="right-side">
-                    <ul>
-                        <li class="rs">OMG</li>
-                        <li class="rs">Memes para todos</li>
-                        <li class="rs">Una dos tres catorce</li>
-                        <li class="rs">Here we come!</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="reset">
-                <i class="fas fa-eraser er-button"></i>
-            </div>
             <div class="next">
                 <button class="button success u-margin-top-small" type="button">Siguiente</button>
             </div>
@@ -70,12 +71,18 @@ name: For logged in Users
     </div>
     <div class="section">
             <div class="question" question-type="relationship" pk="16">
+                <div class="correct-icon hideit">
+                    <i class="far fa-check-circle"></i>
+                </div>
+                <div class="incorrect-icon hideit">
+                    <i class="far fa-check-circle"></i>
+                </div>
                 <div class="the-text">
                     Sunt quo, possimus minima numquam debitis sit. Consequuntur, aspernatur libero. Veritatis harum quia laboriosam quisquam
                     amet ratione?
                 </div>
-                <div class="match">
-                    <div class="left-side">
+                <div class="grid-x grid-margin-x align-center">
+                    <div class="cell small-4 medium-6 left-side">
                         <ul>
                             <li class="ls">Match 1</li>
                             <li class="ls">Wakaka</li>
@@ -83,7 +90,7 @@ name: For logged in Users
                             <li class="ls">360 No-scope</li>
                         </ul>
                     </div>
-                    <div class="right-side">
+                    <div class="cell small-4  medium-6 right-side">
                         <ul>
                             <li class="rs">OMG</li>
                             <li class="rs">Memes para todos</li>
@@ -91,9 +98,17 @@ name: For logged in Users
                             <li class="rs">Here we come!</li>
                         </ul>
                     </div>
+                    <div class="cell small-4 medium-6 align-self-middle ">
+                        <div class="reset">
+                            <i class="fas fa-eraser er-button"></i>
+                        </div>
+                    </div>
                 </div>
-                <div class="reset">
-                    <i class="fas fa-eraser er-button"></i>
+                <div class="answer-correct hideit">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ab reiciendis dolore ipsum sint inventore quisquam? Ipsum sit excepturi unde, et iste animi libero sapiente?
+                </div>
+                <div class="answer-incorrect hideit">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ab reiciendis dolore ipsum sint inventore quisquam? Ipsum sit excepturi unde, et iste animi libero sapiente?
                 </div>
                 <div class="next">
                     <button class="button success u-margin-top-small" type="button">Siguiente</button>
@@ -154,7 +169,7 @@ name: For logged in Users
         </div>
     </div>
     <div class="section">
-        <div class="question" question-type="multiple_answer" pk="60">
+        <div class="question" question-type="multiple_answers" pk="60">
             <p class="the-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam modi deserunt tempora dolor id perspiciatis fugit
                 eveniet dolore nostrum repudiandae quasi, voluptatibus deleniti iste iusto.</p>
     
@@ -179,7 +194,7 @@ name: For logged in Users
         </div>
     </div>
     <div class="section">
-        <div class="question" question-type="multiple_answer" pk="61">
+        <div class="question" question-type="multiple_answers" pk="61">
             <p class="the-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam modi deserunt tempora dolor id perspiciatis fugit
                 eveniet dolore nostrum repudiandae quasi, voluptatibus deleniti iste iusto.</p>
             <div class="checkbox-choice">

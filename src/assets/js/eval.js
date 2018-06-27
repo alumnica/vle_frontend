@@ -35,10 +35,11 @@ $(document).ready(function () {
     var relAnswersLength = $('.question[question-type="relationship"]').length;
     var relMOAnswersLength = $('.question[question-type="multiple_option"]').length;
     var relMAAnswersLength = $('.question[question-type="multiple_option"]').length;
+    var relNAAnswersLength = $('.question[question-type="numeric_answer"]').length;
     var relAnswers = new Array(relAnswersLength);
     var relMOAnswers = new Array(relMOAnswersLength);
     var relMAAnswers = new Array(relMAAnswersLength);
-    var relNAAnswers = new Array();
+    var relNAAnswers = new Array(relNAAnswersLength);
     var relPLAnswers = new Array();
 
     $('.question[question-type="relationship"]').each(function () {
@@ -137,21 +138,24 @@ $(document).ready(function () {
 
         //reset all
 
-        $(".reset").click(function () {
+        theQuest.find(".reset").click(function () {
             colors = ["red", "orange", "yellow", "green", "blue", "purple"];            
             theAnswers = new Array(theQuest.find(".left-side ul li").length);
             console.log(theAnswers);
             console.log(colors);
-            $(".left-side li").each(function () {
+            theQuest.find(".left-side li").each(function () {
                 $(this).removeClass("ls");
                 $(this).addClass("ls");
                 $(this).removeAttr("style");
             });
-            $(".right-side li").each(function () {
+            theQuest.find(".right-side li").each(function () {
                 $(this).removeClass("rs");
                 $(this).addClass("rs");
                 $(this).removeAttr("style");
             });
+            relAnswers.splice(qIndex,1,'');
+            $('#relationship').val(relAnswers.join('|'));
+            $('#evalMenu li[data-menuanchor="'+dataAnchor+'"] a').html('<i class="far fa-circle"></i>');
         });
 
 
@@ -184,10 +188,10 @@ $(document).ready(function () {
 		
     });
 
-    $('.question[question-type="multiple_answer"').each(function () {
+    $('.question[question-type="multiple_answers"').each(function () {
         var dataAnchor = $(this).parent().attr('data-anchor');
         var thePk = $(this).attr('pk');
-        var qIndex = $('.question[question-type="multiple_answer"]').index(this);
+        var qIndex = $('.question[question-type="multiple_answers"]').index(this);
         var theAnswer = new Array();
         var theQuest = $(this);
 
@@ -263,8 +267,8 @@ $(document).ready(function () {
             if(!theAnswer.includes(undefined)){
                 $('#evalMenu li[data-menuanchor="'+dataAnchor+'"] a').html('<i class="fa fa-circle"></i>');
                 
-                theAnswer.unshift(thePk);
-                relPLAnswers.splice(qIndex,1,theAnswer.join(';'));
+                // theAnswer.unshift(thePk);
+                relPLAnswers.splice(qIndex,1,thePk +';'+theAnswer.join(';'));
                 $('#pulldown_list').val(relPLAnswers.join('|'));
     
                 console.log(theAnswer);
