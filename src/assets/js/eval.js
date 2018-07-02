@@ -6,17 +6,17 @@ $(document).ready(function () {
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'eighthPage', 'ninethPage', 'tenthPage', 'eleventhPage', 'twelvethPage'],
         menu: '#evalMenu',
 
-        afterLoad: function(anchorLink, index){
-            var loadedSection = $(this);
+        // afterLoad: function(anchorLink, index){
+        //     var loadedSection = $(this);
     
-            if(anchorLink == 'eleventhPage' && finished ==false){
-                $.fn.fullpage.setAllowScrolling(false, 'down');
-            } else if (anchorLink != 'eleventhPage' && finished == false) {
-                $.fn.fullpage.setAllowScrolling(true);
-            } else {
-                $.fn.fullpage.setAllowScrolling(true);
-            }
-        }
+        //     if(anchorLink == 'eleventhPage' && finished ==false){
+        //         $.fn.fullpage.setAllowScrolling(false, 'down');
+        //     } else if (anchorLink != 'eleventhPage' && finished == false) {
+        //         $.fn.fullpage.setAllowScrolling(true);
+        //     } else {
+        //         $.fn.fullpage.setAllowScrolling(true);
+        //     }
+        // }
  
     });
 
@@ -26,11 +26,21 @@ $(document).ready(function () {
     $('.next').on('click', '.button', function () {
         $.fn.fullpage.moveSectionDown();
     });
-    $('.reveal').on('click', '#end-eval', function () {
-       finished = true;
-       $.fn.fullpage.moveSectionDown();
-       $('#score').attr('href', '#twelvethPage');
+
+
+    $('.end button').click(function(){
+        $(this).parent().parent().remove();
+        $('.the-score').fadeIn(500);
     });
+
+
+    // $('.reveal').on('click', '#end-eval', function () {
+    //    finished = true;
+    //    $(".question :input").attr("disabled", true);
+    //    $('.reset').hide();
+    //    $.fn.fullpage.moveSectionDown();
+    //    $('#score').attr('href', '#twelvethPage');
+    // });
 
     var relAnswersLength = $('.question[question-type="relationship"]').length;
     var relMOAnswersLength = $('.question[question-type="multiple_option"]').length;
@@ -199,8 +209,8 @@ $(document).ready(function () {
 
             var allVals = [];
             theQuest.find(':checked').each(function() {
-            allVals.push($(this).val());
-            console.log(allVals);            
+                allVals.push($(this).val());
+                console.log(allVals);            
             });
             allVals.unshift(thePk);
             // console.log(allVals);
@@ -279,6 +289,59 @@ $(document).ready(function () {
         
 
     });
-    
+
+    $('.question').each(function () {
+        
+        if ($(window).height() > 450) {
+
+            var element = $(this)
+            var dims = element.height();
+
+            var parentHeight = element.parent().height();
+
+            var newMargin = ((parentHeight - dims) / 3);
+            // console.log(newMargin);
+            element.css('padding-top', newMargin);
+        }
+    });
+    window.onresize = resize;
+
+    function resize() {
+        $('.question').each(function () {
+
+            var element = $(this)
+            var dims = element.height();
+
+            if ($(window).height() > 450) {
+
+                var parentHeight = element.parent().height();
+
+                var newMargin = ((parentHeight - dims) / 3);
+                // console.log(newMargin);
+                element.css('padding-top', newMargin);
+            } else {
+                element.css('padding-top', '0');
+            }
+        });
+
+    }
+
+
+
+    // });
+
 });
 
+// $(window).on('changed.zf.mediaquery', function(event, newSize, oldSize){
+//     // Inital state small -> medium 
+//     console.log(newSize); // should return medium
+//     console.log(oldSize); // should return small
+// });
+
+$('#tester').fullpage({
+    verticalCentered: false,
+});
+
+$('.the-tab').click(function(){
+    $(this).parent().toggleClass('closed1');
+})
