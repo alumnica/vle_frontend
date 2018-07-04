@@ -10,6 +10,10 @@
 //     }
 // }
 
+#fullpage{
+    top: -3.2rem;
+}
+
 .oda-container {
     // height: calc(100% - 3.2rem);
     height: 100vh;
@@ -29,20 +33,21 @@
 
 .eval-nav{
     position: absolute;
-    width: 60%;
+    
     bottom: 0vh;
     left: 50%;
-    transform: translateX(-50%);
-    @include breakpoint(1000px){
-        width: 40% !important;
+    transform: translateX(-50%);    
+    z-index: 11;
+    @include breakpoint(350px){
+        width: 50%;
     }
-    @include breakpoint(landscape){
+    @media (max-height: 400px){
         width: 30%;
     }
-    // @include breakpoint (500px){
-    //     width: 40%;
-    // }
-    z-index: 11;
+
+    @include breakpoint(1000px){
+        width: 30%;
+    }
 }
 .eval-nav-2{
     position: absolute;
@@ -136,12 +141,13 @@
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
-    margin-top: 20%;
-    @include breakpoint(landscape){
+    margin-top: 10%;
+    @media (max-height: 350px){
         margin-top: 0;
+        margin-bottom: .5rem;
     }
-    @include breakpoint(1000px){
-        margin-top: 10%;
+    @media (max-height: 400px){
+        margin-top: 0;
     }
 }
 
@@ -161,6 +167,9 @@
         margin-top: 1.5rem;
         // margin-bottom: 5rem;
         padding: 0 8rem;
+    }
+    @media (max-height: 350px){
+        margin-top: .5rem;
     }
     ul{
         list-style: none;
@@ -318,7 +327,7 @@ symbol {
     margin-left: auto;
     margin-right: auto;
     // margin-bottom: 7rem;
-    @include breakpoint(1000px){
+    @media (max-height: 350px){
         width: 40%;
         padding-bottom: 40%;
         // margin-bottom: 6rem;
