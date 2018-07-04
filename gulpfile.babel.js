@@ -126,6 +126,7 @@ function javascript() {
   gulp.src('src/assets/js/oda-view.js').pipe(gulp.dest('dist/assets/js'));
   gulp.src('src/assets/js/touchtip.js').pipe(gulp.dest('dist/assets/js'));
   gulp.src('src/assets/js/eval.js').pipe(gulp.dest('dist/assets/js'));
+  gulp.src('src/assets/js/the-moments.js').pipe(gulp.dest('dist/assets/js'));
   return gulp.src(PATHS.entries)
     .pipe(named())
     .pipe($.sourcemaps.init())

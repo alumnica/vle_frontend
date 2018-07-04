@@ -2,32 +2,93 @@
 layout: logged-in 
 name: For logged in Users 
 ---
-<div class="grid-container screen-height">
-    <div class="grid-x align-center cont-height">
-        <div class="cell small-11 h5p-cont">
-            <iframe src="" class="the-h5p">
-                
-            </iframe>
-            <div class="moments">
-                <div id="m1" class="single-mom"></div>
-                <div id="m2" class="single-mom active-mom"></div>
-                <div id="m3" class="single-mom"></div>
+<div id="moments">
+    <div class="section">
+        <div class="slide">
+            <div class="h5p-cont ">
+                <iframe id="first" src="" class="the-h5p" frameborder="0">
+
+                </iframe>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="h5p-cont ">
+                <iframe id="second" src="" class="the-h5p" frameborder="0">
+
+                </iframe>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="h5p-cont ">
+                <iframe id="third" src="" class="the-h5p" frameborder="0">
+
+                </iframe>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="h5p-cont ">
+                <div id="fourth">
+                    
+                    <div class="end-of-uoda">
+                        <p class="h3 text-center">µODA Completada</p>
+                        <div class="uoda-suggestions">
+                            <div class="score-side">
+                                <div class="uoda-image">
+                                    <img src="https://via.placeholder.com/150x150" alt="">
+                                </div>
+                                <p>
+                                    <i class="fa fa-star"></i> x 5000
+                                </p>
+                            </div>
+                            <div class="suggestion-side">
+                                <p>Te recomendamos las siguientes µODAs:</p>
+                                <div class="the-recs">
+                                        <a class="rec">
+                                            <div class="oda-image">
+                                                <img src="../assets/media/ODAs/semaforo.gif" alt="">
+                                            </div>
+                                            <div class="oda-text">
+                                                titulo de ODA
+                                            </div>
+                                        </a>
+                                        <a class="rec">
+                                            <div class="oda-image">
+                                                <img src="../assets/media/ODAs/semaforo.gif" alt="">
+                                            </div>
+                                            <div class="oda-text">
+                                                titulo de ODA
+                                            </div>
+                                        </a>
+                                        <a class="rec hide-for-small-only">
+                                            <div class="oda-image">
+                                                <img src="../assets/media/ODAs/semaforo.gif" alt="">
+                                            </div>
+                                            <div class="oda-text">
+                                                titulo de ODA
+                                            </div>
+                                        </a>
+                                    </div>
+                            </div>
+                            <div class="return-to-oda-btn">
+                                <button class="button end-button"><i class="fas fa-play"></i> &nbsp; Regresar a la ODA</button>
+                            </div>
+                            <div class="return-to-materia-btn">
+                                <button class="button warning end-button"><i class="fa fa-map"></i> &nbsp; Regresar a la Materia</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="nav-items">
-        <button type="button" class="prev-arrow">
-            <i class="fas fa-chevron-left"></i>
-        </button>
-        <button type="button" class="next-arrow">
-            <i class="fas fa-chevron-right"></i>
-        </button>
-<!-- return buttons -->
-        <a href="ambitos-grid.html" class="mom-grid-btn">
-            <i class="fas fa-th"></i>
-        </a>
-        <a href="materia.html" class="mom-return-btn">
-            <i class="fas fa-undo-alt"></i>
-        </a>
-    </div>
+</div>
+ <!-- return buttons -->
+ <a href="ambitos-grid.html" class="mom-grid-btn">
+    <i class="fas fa-th"></i>
+</a>
+<a href="materia.html" class="mom-return-btn">
+    <i class="fas fa-undo-alt"></i>
+</a>
+<div id="momMenu">
+    
 </div>

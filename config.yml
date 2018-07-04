@@ -36,3 +36,4 @@ PATHS:
     - "src/assets/js/!(oda-view).js"
     - "src/assets/js/!(touchtip).js"
     - "src/assets/js/!(eval).js"
+    - "src/assets/js/!(the-moments).js"

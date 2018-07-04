@@ -42,6 +42,7 @@ fontawesome.library.add(regular);
 
 import 'jquery-ui/ui/widgets/tooltip';
 import 'jquery-ui/ui/widgets/selectable';
+import 'jquery-ui/ui/effects/effect-slide';
 
 // flip
 
