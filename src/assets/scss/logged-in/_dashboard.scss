@@ -8,15 +8,29 @@
 }
 
 .materia-slider{
-    background-color: #ff0000;
+    
+}
+.dash-ambit{
+    // border: solid 1px black;
+    // background-color: red;
+    display: block;
 }
 
 .insignia {
-    background-color: $color-morado;
+    // background-color: $color-morado;
     padding: 1rem;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.3);
+    margin: .5rem;
+    transition: all .2s;
+    &:hover {
+        transform: scale(1.05);
+        transition: all .2s;
+    }
 
     img {
-        border-radius: 5px;
+        // border-radius: 5px;
     }
 }
 
@@ -24,17 +38,121 @@
 
 .actividad-receinte{
     position: relative;
-    height: 10rem;
+    height: 7rem;
     width: 100%;
     background-color: $color-azul;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 3px rgba(0,0,0, .3);
+    transition: all .2s;
+    @include breakpoint(800px){
+        height: 10rem;
+        width: 100%;
+    }
+    @media only screen and (max-height: 400px) {
+   
+        width: 80%;
+        margin: 0 auto;
+        height: 7rem;
+    }
+    &:hover{
+        box-shadow: 2px 2px 3px rgba($primary-color, .8);
+        transition: all .2s;
+    }
+
+    
     
     .oda-reciente{
         position: absolute;
-        height: 8rem;
-        width: 8rem;
-        background-color: $color-amarillo;
+        height: 6rem;
+        width: 6rem;
+        @include breakpoint(medium){
+            height: 8rem;
+            width: 8rem;
+        }
+
+        // background-color: $color-amarillo;
         top: 50%;
         left: 2rem;
-        transform: translateY(-50%)
+        transform: translateY(-50%);
+        // border: solid 1px red;
+        transition: all .4s;
+        
+        &:hover{
+            transform: scale(1.1) translateY(-50%);
+            transition: all .2s;
+        }
+
+        &-image {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        &-text{
+            position: absolute;
+            bottom: -5%;
+            width: 300%;
+            
+            p{
+                // margin: 0;
+                background-color: rgba(255, 255, 255, 0.5);
+                // text-align: center;
+                border-radius: .5rem;
+                display: inline;
+                padding: .2rem .5rem;
+                transition: all .2s;
+                
+            }
+            
+        }
+
+       
+    }
+}
+
+.oda-reciente:hover p {
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    transition: all .2s;
+}
+
+
+.dash-card{
+    height: 10rem;
+
+    .dash-ambit-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left:0;
+    }
+
+    .dash-text{
+        font-size: .8rem;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+#materias-slider{
+    transform: scale(.97);
+    box-shadow: 2px 2px 3px rgba(0,0,0,.2);
+    border-radius: .5rem;
+    transition: all .4s;
+    &:hover{
+        transform: scale(1);
+        transition: all .2s;
+        box-shadow: 2px 2px 5px rgba(0,0,0,.2)
+        // filter: grayscale(100%);
+    }
+
+    .owl-carousel .owl-stage-outer {
+        border-radius: .5rem;
+    }
+    .owl-stage-outer {
+        border-radius: .5rem;
     }
 }

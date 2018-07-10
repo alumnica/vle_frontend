@@ -60,29 +60,11 @@ import Foundation from 'foundation-sites';
 
 
 $(document).ready(function () {
-  $('#materias-slider').owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: false,
-    items: 1,
-    dots: false,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-  });
-
-
-  $('#insignias-slider').owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: false,
-    items: 4,
-    dots: false,
-  });
+  
 
 
 
-  $(document).tooltip();
+  // $(document).tooltip();
 
 });
 
