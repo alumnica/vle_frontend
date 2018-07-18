@@ -59,14 +59,13 @@ import Foundation from 'foundation-sites';
 //import './lib/foundation-explicit-pieces';
 
 
-$(document).ready(function () {
-  
+// Register service worker to control making site work offline
 
-
-
-  // $(document).tooltip();
-
-});
+// if('serviceWorker' in navigator) {
+//   navigator.serviceWorker
+//            .register('/static/webapp/PWA/serviceWorker.js')
+//            .then(function() { console.log('Service Worker Registered'); });
+// }
 
 
 $(document).foundation();
@@ -95,8 +94,3 @@ $('.title-bar').on('sticky.zf.stuckto:top', function () {
 //     confirmButtonText: 'Cool'
 //   })
 
-window.addEventListener("load", function () {
-  setTimeout(function () {
-    window.scrollTo(0, 1);
-  }, 0);
-});

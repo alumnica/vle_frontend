@@ -413,7 +413,8 @@
 
 .end-of-uoda{
     background-color: white;
-    width: 100%;
+    margin: 0 auto;
+    width: 50%;
     height: 100%;
     border-radius: 2rem;
     box-shadow: 0px 0px 25px rgba(115, 48, 138, 0.514);
@@ -423,6 +424,29 @@
     }
     @include breakpoint (500px down){
         padding: .1rem;
+        width: 100%;
+    }
+    text-align: center;
+
+    .uoda-image {
+        // border: solid 1px black;
+        height: 6rem;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+        @include breakpoint (800px){
+            height: 50%;
+        }  
+    }
+
+    .uoda-score{
+        font-size: 1.2rem;
+        @include breakpoint (800px){
+            font-size: 1.5rem;
+        }
+
+        .fa-star {color: gold}
     }
    
 
@@ -433,96 +457,109 @@
     height: 100%;
     
 
-    .end-uoda-btn {
-        background-color: $color-red;
+  
+}
+
+.end-uoda-btn {
+
+    display: inline-block;
+    background-color: $color-red;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 1.5rem;
+    border: 5px solid white;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: all .2s;
+    @include breakpoint(800px){
         padding: 2rem 3rem;
         font-size: 1.5rem;
-        font-weight: bold;
-        color: white;
-        border-radius: 1.5rem;
-        border: 5px solid white;
-        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+    }
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+        transition: all .2s;
 
     }
+
 }
 
 .uoda-suggestions{
-    @include xy-grid;
 
-    .score-side {
-        @include xy-cell(6);
-        text-align: center;
-        @include breakpoint(400px down){
-            @include xy-cell(12);
-        }
 
-        .uoda-image{
-            height: 100px;
-            @include breakpoint(800px){
-                height: 170px;
+    // @include xy-grid;
 
-            }
+    // .score-side {
+    //     @include xy-cell(6);
+    //     text-align: center;
+    //     @include breakpoint(400px down){
+    //         @include xy-cell(12);
+    //     }
 
-            img{
-                max-height: 100%;
-                max-width: 100%;;
-            }
+    //     .uoda-image{
+    //         height: 100px;
+    //         @include breakpoint(800px){
+    //             height: 170px;
 
-        }
-        p {
-            margin: 0;
-            @include breakpoint(800px){
-                padding: 2rem;
-                font-size: 2rem;
-            }
-            font-size: 1.3rem;
+    //         }
 
-            .fa-star {
-                color: gold;
-            }
-        }
-    }
-    .suggestion-side {
-        @include xy-cell(6);
-        @include breakpoint(400px down){
-            @include xy-cell(12);
-        }
-        @include breakpoint(800px){
-            padding: 2rem;
-        }
-        text-align: center;
+    //         img{
+    //             max-height: 100%;
+    //             max-width: 100%;;
+    //         }
 
-        p {
-            line-height: 1.1rem;
-            margin: 0;
-            @include breakpoint(800px){
-                font-weight: bold;
-                font-size: 1.5rem;
-                line-height: 2rem;
-            }
-            @include breakpoint (600px down){
-        font-size: .9rem;
-        line-height: 1rem;
-            }
-        }
-    }
+    //     }
+    //     p {
+    //         margin: 0;
+    //         @include breakpoint(800px){
+    //             padding: 2rem;
+    //             font-size: 2rem;
+    //         }
+    //         font-size: 1.3rem;
 
-    .return-to-oda-btn {
-        @include xy-cell(6);
-        text-align: center;
-        @include breakpoint(400px down){
-            @include xy-cell(12);
-        }
-    }
-    .return-to-materia-btn {
-        @include xy-cell(6);
-        text-align: center;
-        @include breakpoint(400px down){
-            @include xy-cell(12);
-        }
-    }
+    //         .fa-star {
+    //             color: gold;
+    //         }
+    //     }
+    // }
+    // .suggestion-side {
+    //     @include xy-cell(6);
+    //     @include breakpoint(400px down){
+    //         @include xy-cell(12);
+    //     }
+    //     @include breakpoint(800px){
+    //         padding: 2rem;
+    //     }
+    //     text-align: center;
+
+    //     p {
+    //         line-height: 1.1rem;
+    //         margin: 0;
+    //         @include breakpoint(800px){
+    //             font-weight: bold;
+    //             font-size: 1.5rem;
+    //             line-height: 2rem;
+    //         }
+    //         @include breakpoint (600px down){
+    //     font-size: .9rem;
+    //     line-height: 1rem;
+    //         }
+    //     }
+    // }
+
+    // .return-to-oda-btn {
+    //     @include xy-cell(6);
+    //     text-align: center;
+    //     @include breakpoint(400px down){
+    //         @include xy-cell(12);
+    //     }
+    // }
+    // .return-to-materia-btn {
+    //     @include xy-cell(6);
+    //     text-align: center;
+    //     @include breakpoint(400px down){
+    //         @include xy-cell(12);
+    //     }
+    // }
 }
