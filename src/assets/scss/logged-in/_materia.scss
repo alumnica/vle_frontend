@@ -1,3 +1,7 @@
+.materia-inst {
+    padding: 1rem;
+}
+
 .canvas  {
     // height: 500px;
     // width: 300px;
@@ -8,7 +12,7 @@
     // @include breakpoint(medium){
     //     float: left;
     // }
-    max-width: 310px;
+    // max-width: 310px;
     margin: 0 auto;
 
 }
@@ -76,7 +80,7 @@
             transition: all .2s;
             
             img{
-                transform:translateY(-50%) scale(1.5);
+                transform:translateY(-50%) scale(1.2);
                 transition: all .2s;   
             }
         }
@@ -89,7 +93,7 @@
         
         &:hover{
             img {               
-                transform:translateY(-50%) scale(1.5);
+                transform:translateY(-50%) scale(1.2);
             }
         }
     }
@@ -100,7 +104,7 @@
         
         &:hover{
             img {               
-                transform:translateY(-50%) scale(1.5);
+                transform:translateY(-50%) scale(1.2);
             }
         }
     }  
@@ -112,7 +116,7 @@
         
         &:hover{
             img {               
-                transform:translateY(-50%) scale(1.5);
+                transform:translateY(-50%) scale(1.2);
             }
         }
     }

@@ -2,119 +2,100 @@
 layout: logged-in
 name: For logged in Users
 ---
+<!-- preloader -->
+<div class='container' id="preloader">
+    <div class='loader'>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--text'></div>
+    </div>
+</div>
+
+<script>
+    setTimeout(function () {
+        document.getElementById("preloader").classList.add("is-load");
+    }, 500);
+</script>
+<!-- end preloader -->
+
 <div class="grid-container">
-<div class="user-info">
-    <div class="grid-x grid-margin-x grid-margin-y">
-        <div class="cell medium-12">
-            <div class="grid-x align-middle grid-margin-x">
-                <div class="cell shrink">
-                    <img src="../assets/media/perfil-01-01_100x100.png" alt="Avatar Picture">
-                </div>
-                <div class="cell shrink">
-                    <h4><a href="eval.html">Juan Escutia asdasdads</a> </h4>
-                    <p class="h5">
-                        <i class="fas fa-star star"></i>
-                        </i> 10,5678</p>
-                </div>
-                <div class="cell shrink">
-
-
-                </div>
+    <div class="dashboard-grid">
+        <div class="profile-picture">
+            <a href="#">
+                <img src="../assets/media/profile-pic.png" alt="profile picture">
+            </a>
+        </div>
+        <div class="user-info">
+            <a class="user-info-name">
+                Juan Escutia
+            </a>
+            <div class="user-info-score">
+                <i class="fa fa-star"></i> 50,0000
+            </div>
+            <div class="user-info-test">
+                <a href="#" class="dashboard-test-button">
+                    <i class="fas fa-vial"></i> Test
+                </a>
             </div>
         </div>
-        <div class=" cell medium-6">
-            <p class="caps">Mapa de Selección de Materias</p>
-            <div id="materias-slider" class="owl-carousel owl-theme">
-                <a href="ambitos-grid.html" class="dash-ambit">
-                    <div class="dash-card amarillo">
-                        <div class="dash-ambit-image">
-                            <img src="../assets/media/ambitos-bg/ambitos-01.png" alt="propedeutico X">
-                        </div>
-                        <div class="dash-text amarillo_text">
-                                Propedeutico de Ciencias Marciales 
-                        </div>
-                    </div>
-                </a> 
-                <a href="ambitos-grid.html"class="dash-ambit">
-                    <div class="dash-card rojiso">
-                        <div class="dash-ambit-image">
-                            <img src="../assets/media/ambitos-bg/ambitos-05.png" alt="propedeutico X">
-                        </div>
-                        <div class="dash-text rojiso_text">
-                                Cosas de Escuela
-                        </div>
-                    </div> 
-                </a> 
-                <a href="ambitos-grid.html"class="dash-ambit">
-                    <div class="dash-card azul">
-                        <div class="dash-ambit-image">
-                            <img src="../assets/media/ambitos-bg/ambitos-03.png" alt="propedeutico X">
-                        </div>
-                        <div class="dash-text azul_text">
-                                Lagos Mentales
-                        </div>
-                    </div> 
-                </a>                  
+        <div class="recent-activity">
+            <div class="recent-activity-heading">
+                <span class="title">Actividad Receinte</span>
+                <span class="recent-activity-link">
+                    <a href="recent.html" title="Ver toda actividad reciente">
+                        <i class="fa fa-calendar-alt"></i>
+                    </a>
+                </span>
             </div>
-        </div>
-        <div class="cell medium-6">
-            <p class="caps">Insignias</p>
-            <div id="insignias-slider" class="owl-carousel owl-theme">
-                <div class="insignia">
-                    <img src="../assets/media/Insignias/insignia_ambito.png" alt="">
+            <!-- start recent activity item -->
+            <a title="Ir a ODA"  href="#" class="recent-activity-item" style="background: url(../assets/media/portadas/01.jpg); background-size: cover;">
+                <div class="recent-activity-oda">
+                    <img src="../assets/media/ODAs/semaforo.gif" alt="camion">
                 </div>
-                <div class="insignia">
-                    <img src="../assets/media/Insignias/insignia_microODA.png" alt="">
+                <div class="recent-activity-oda-text">
+                    Nombre largo de ODA
                 </div>
-                <div class="insignia">
-                    <img src="../assets/media/Insignias/insignia_ODA.png" alt="">
-                </div>
-                <div class="insignia">
-                    <img src="../assets/media/Insignias/insignia_login.png" alt="">
-                </div>
-
-            </div>
-        </div>
-        <div class="cell medium-6">
+            </a>
+            <!-- end recent ativity item -->
            
+            <!-- start recent activity item -->
+            <a href="#" class="recent-activity-item" style="background: url(../assets/media/portadas/02.jpg); background-size: cover;">
+                <div class="recent-activity-oda">
+                    <img src="../assets/media/ODAs/semaforo.gif" alt="camion">
+                </div>
+                <div class="recent-activity-oda-text">
+                    Nombre largo de ODA
+                </div>
+            </a>
+            <!-- end recent ativity item -->
+           
+            <!-- start recent activity item -->
+            <a href="#" class="recent-activity-item" style="background: url(../assets/media/portadas/03.jpg); background-size: cover;">
+                <div class="recent-activity-oda">
+                    <img src="../assets/media/ODAs/semaforo.gif" alt="camion">
+                </div>
+                <div class="recent-activity-oda-text">
+                    Nombre largo de ODA
+                </div>
+            </a>
+            <!-- end recent ativity item -->
+           
+    
         </div>
-        <div class="cell medium-6">
-            <p class="caps">Actividad Reciente</p>
-            <div class="grid-x grid-margin-y">
-                <div class="cell medium-12">
-                    <div class="actividad-receinte" style="background: url(../assets/media/portadas/01.jpg); background-size: cover;">
-                        <a class="oda-reciente">
-                            <div class="oda-reciente-image">
-                                <img src="../assets/media/ODAs/semaforo.gif" alt="camion">
-                            </div>
-                            <div class="oda-reciente-text">
-                                    <p>name of the oda larga oda odaasa</p>
-                            </div>
-                           
-                        </a>
-                    </div>
-                </div>
-                <div class="cell medium-12">
-                    <div class="actividad-receinte">
-                        <div class="oda-reciente">
-                            <p>name of the oda larga oda odaasa asd</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="cell medium-12">
-                    <div class="actividad-receinte">
-                        <div class="oda-reciente">
-                            Imagen de ODA aqui
-                        </div>
-                    </div>
-                </div>
-                <div class="cell meium-12 text-center">
-                    <a href="#" class="">Ver más ODAs incompletas</a>
-                </div>
+        <!-- end recent activity -->
+        <div class="dashboard-test">
+            <a href="#" class="dashboard-test-button">
+                <i class="fas fa-vial"></i> Test
+            </a>
+        </div>
+        <div class="blog">
+            <div class="blog-content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus sint exercitationem numquam. Soluta cupiditate alias consequatur dolor fugit, quo expedita velit, earum iure fuga tenetur?
             </div>
-
         </div>
-
-
     </div>
 </div>

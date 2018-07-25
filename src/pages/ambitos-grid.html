@@ -3,6 +3,24 @@ layout: logged-in
 name: For logged in Users
 ---
 
+<div class='container' id="preloader">
+        <div class='loader'>
+            <div class='loader--dot'></div>
+            <div class='loader--dot'></div>
+            <div class='loader--dot'></div>
+            <div class='loader--dot'></div>
+            <div class='loader--dot'></div>
+            <div class='loader--dot'></div>
+            <div class='loader--text'></div>
+        </div>
+    </div>
+    
+    <script>
+        setTimeout(function(){
+            document.getElementById("preloader").classList.add("is-load");
+        }, 1000);
+    </script>
+
 <div class="grid-container">
 
                <div class="grid">
@@ -316,7 +334,11 @@ name: For logged in Users
                             </div>
                   </div>
                 </div>
-                
-        
+                       
     
 </div>
+
+<!-- makes  menu active -->
+<script>
+        document.querySelector('#top-menu-grid').classList.add("top-active");
+</script>

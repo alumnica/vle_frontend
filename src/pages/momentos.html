@@ -2,6 +2,26 @@
 layout: logged-in 
 name: For logged in Users 
 ---
+<div class='container' id="preloader">
+    <div class='loader'>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--text'></div>
+    </div>
+</div>
+
+<script>
+    setTimeout(function () {
+        document.getElementById("preloader").classList.add("is-load");
+    }, 1500);
+</script>
+
+
+
 <div id="moments">
     <div class="section">
         <div class="slide">
@@ -46,9 +66,7 @@ name: For logged in Users
     </div>
 </div>
  <!-- return buttons -->
- <a href="ambitos-grid.html" class="mom-grid-btn">
-    <i class="fas fa-th"></i>
-</a>
+
 <a href="materia.1.html" class="mom-return-btn">
     <i class="fas fa-undo-alt"></i>
 </a>

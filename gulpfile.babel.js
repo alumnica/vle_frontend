@@ -122,6 +122,7 @@ let webpackConfig = {
 // In production, the file is minified
 function javascript() {
 
+  gulp.src('src/assets/js/user-profile.js').pipe(gulp.dest('dist/assets/js'));
   gulp.src('src/assets/js/dashboard.js').pipe(gulp.dest('dist/assets/js'));
   gulp.src('src/assets/js/materias.js').pipe(gulp.dest('dist/assets/js'));
   gulp.src('src/assets/js/oda-view.js').pipe(gulp.dest('dist/assets/js'));

@@ -38,3 +38,4 @@ PATHS:
     - "src/assets/js/!(eval).js"
     - "src/assets/js/!(the-moments).js"
     - "src/assets/js/!(dashboard).js"
+    - "src/assets/js/!(user-profile).js"

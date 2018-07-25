@@ -61,44 +61,6 @@
 
 
 
-.mom-grid-btn{
-    background-color: $light-gray;
-    border: solid 4px $white;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 2.5rem;
-    text-align: center;
-    font-size: 1rem;
-    padding-top: .3rem;
-
-
-    // position: sticky;
-    
-    position: absolute;
-    bottom: 1rem;
-    // bottom: 6rem;
-    left: .3rem;
-    z-index: 11;
-
-    color: $color-violet;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-    @include breakpoint(1000px){
-        width: 5rem;
-        height: 5rem;
-        border-radius: 5rem;
-        font-size: 2rem;
-        padding-top: .9rem;
-        bottom: 1rem;
-        left: 1rem;
-        transform: scale(.8);
-        transition: all .2s;
-    }
-    
-    &:hover{
-        transition: all .2s;
-        transform: scale(1);
-    }
-}
 
 .mom-return-btn {
     background-color: $light-gray;
@@ -110,7 +72,7 @@
     font-size: 1rem;
     padding-top: .3rem;
     position: absolute;
-    bottom: 2rem;
+    bottom: 1rem;
     right: .5rem;
     z-index: 11;
     color: $color-violet;
@@ -133,18 +95,12 @@
     }
 }
 
-.screen-height {
-    height: calc(100vh - 3.2rem);
-}
 
-.cont-height{
-    height: 100%;
-}
 
 .h5p-cont {
     background-color: lighten($primary-color, 40);
-    height: 95%;
-    padding: .5rem;
+    height: 100%;
+    padding: .2rem;
     margin: 0 1rem;
     @include breakpoint(800px){
         width: 90%;
@@ -154,7 +110,7 @@
         left: 49%;
         transform: translateX(-50%);
     }
-    border-radius: 1rem;
+    // border-radius: 1rem;
     @include breakpoint (500px down){
         padding: 0;
     }
@@ -175,15 +131,13 @@
 }
 
 .moments{
-    position: absolute;
-    top: -2rem;
-    @include breakpoint(800px){
-        top: -1.5rem;
-    }
-    left: 50%;
-    transform: translateX(-50%);
-    
-    
+    // position: absolute;
+    // top: -2rem;
+    // @include breakpoint(800px){
+    //     top: -1.5rem;
+    // }
+    // left: 50%;
+    // transform: translateX(-50%);  
     
 }
 
@@ -282,7 +236,7 @@
 
 .fp-controlArrow {
     @include breakpoint (800px down){
-        top: 35% !important;
+        top: 40% !important;
     }
 }
 
@@ -304,7 +258,7 @@
         border-bottom-left-radius: 3rem;
         border-width: 4px 0 4px 4px !important;
         height: 4.5rem;
-        width: 3.5rem;
+        width: 2.5rem;
     }
     
     &:after{
@@ -352,7 +306,7 @@
         border-top-right-radius: 3rem;
         border-bottom-right-radius: 3rem;        
         height: 4.5rem;
-        width: 3.5rem !important;
+        width: 2.5rem !important;
     }
 
     &:after{
@@ -381,7 +335,7 @@
 }
 
 .fp-slides{
-    height: calc(100% - 3.2rem) !important;
+    height: calc(100% - 45px) !important;
 }
 
 //over write nav from fulloage.js
@@ -399,7 +353,7 @@
     margin: 0 auto !important;
 }
 .fp-slidesNav.bottom {
-    bottom: 3rem !important;
+    bottom: 2rem !important;
 }
 .fp-slidesNav.top {
     top: 0 !important;

@@ -1,107 +1,281 @@
-.off-canvas {
-    // padding: 1rem;
-    font-family: 'Bryant';
-    @include breakpoint(medium){
-        font-size: 1.5rem;
-    }
+.main-menu{
+    background-color: White;
+    position: absolute;
+    top: 45px;
+    z-index: 10;
+    width: 100%;
+    max-height: calc(100% - 50px);
+    overflow: auto;
+    box-shadow: 5px 0 5px rgba(0,0,0,.4);
 
-    &__main-menu {
-        background-color: rgb(255, 255, 255);
-        font-weight: 700;        
+    &-container{
+        max-width: 1200px;
+        margin: 0 auto;
+        @include breakpoint(medium){
+            text-align: center;
+        }
+        
 
-
-        a {
-            color: $black;
-            padding-left: 2rem;
+        .accordion-title{
+            border: none !important;
+            border-radius: 0 !important;
+            font-size: 1rem;
+            font-weight: bold;
+            
+        }
+ 
+        .accordion-item.top-item > .accordion-title:hover,
+        .accordion-item.top-item.is-active > .accordion-title
+        {
+            background-color: $color-amarillo-sol;
+        }
+        
+        // .accordion-item.top-item > .accordion-item > .accordion-title {
+        //     background-color: lighten($color-violet, 30);
     
-            &:hover,
-            {
-                background-color: $color-orange;
-                color: red;
-            }
-    
-            &:focus{
-                background-color: $color-orange;
-                color: red;
+        // }
+        
+        .accordion-content{
+            border: none !important;
+            border-radius: 0 !important;
+
+        }
+
+        .top-item > .accordion-content{
+            padding: 0 0 0 1rem;
+            @include breakpoint(medium){
+                padding: 0 3rem;
             }
         }
-    
-        .indice-menu {
-            background-color: $color-amarillo;
 
-            a{
-                padding-left: 3rem;
-                color: $color-verde;
-            }
+        .accordion-item {
+            border-bottom: solid 1px $light-gray;
+            text-transform: uppercase;
         }
 
+        
+
+
     }
-    
 }
 
-.title-bar {
-    position: absolute;
+.menu-test{
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.end-sesh{
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    &-btn{
+        padding: 1rem 2.5rem;
+        background-color:$color-amarillo-sol;
+        color: $color-violeta;
+        border-radius: 1rem;
+        box-shadow: 2px 2px 4px rgba(0,0,0,.1)
+
+    }
+}
+
+.menu-cover{
+    background: rgba(0, 0, 0, 0.1);
+    height: 100%;
+    position: fixed;
     top: 0;
     left: 0;
-
-    background-color: transparent;
-    color: $black;
+    z-index: 9;
     width: 100%;
-    z-index: 10;
-    // transition: all .25s ease;
-    height: 3.2rem;
-
-    
-    // position: sticky;
-    top: 0;
-    
-    // height: 4.5em;
-    // .title-bar-right, .title-bar-left {
-    //     transition: padding-top .25s ease;
-    //     padding-top: 1.4em;
-        
-    //   }
-      &.shrink {
-        // height: 3em;
-        padding-top: 0;
-        padding-bottom: 0;
-        .title-bar-right, .title-bar-left {
-          padding-top: 0;
-          padding-bottom: 0;
-        }
-    }
-
-    .hamburger{
-        padding: 3px;
-        
-    }
-    
-
-    @include breakpoint(medium){
-        // padding: 0;
-    }
-
-    &-title {
-        color: $black;
-
-    }
-
-    .menu-icon::after {
-        /* the block itself, the first line */
-        background: $color-violet;
-        /* middle and bottom */
-        box-shadow: 0 7px 0 $color-violet, 0 14px 0 $color-violet;
-        /* respect WebKit */
-        -webkit-box-shadow: 0 7px 0 $color-violet, 0 14px 0 $color-violet;
-    }
-
 }
+
+.menu-open{
+    font-size: 1.5rem;
+    margin-top: 5px;
+    color: $color-violet;
+}
+
+
 
 .title-bar-login {
     background-color: transparent;
 }
 
-.shadow-bar {
-    box-shadow: 0px 3px 5px rgba($black, .1);
+
+.title-bar {
+    background-color: $light-gray;
+    
+    height: 50px;
+    
+
+    .menu-icon::after {
+                /* the block itself, the first line */
+                background: $color-violet;
+                /* middle and bottom */
+                box-shadow: 0 7px 0 $color-violet, 0 14px 0 $color-violet;
+                /* respect WebKit */
+                -webkit-box-shadow: 0 7px 0 $color-violet, 0 14px 0 $color-violet;
+            }
+
+    &-title{
+        padding-left: .5rem;
+
+        img {
+            vertical-align: top;
+        }
+    }
+}
+
+
+
+
+
+//     background: #ffc0c0;
+//     width: 100px;
+//     height: 100px;
+//     border-radius: 50%;
+//     text-align: center;
+//     line-height: 100px;
+//     vertical-align: middle;
+//     padding: 30px;
+
+.top-nav {
+    background-color: $white;
+    
+    position: sticky;
+    top: 0;
+    height: 45px;
+    z-index: 10;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    @include breakpoint(medium){
+        margin-bottom: 1rem;
+    }
+    
+
+    &-container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 5px 8px;
+        overflow: hidden;
+        
+
+        &-right{
+            float: right;
+        }
+
+        &-left{
+            float: left;
+
+            .top-nav-title{
+                padding-left: .5rem;
+        
+                img {
+                    vertical-align: top;
+                    margin-top: 5px;
+                }
+            }
+
+            .menu-icon {
+                position: relative;
+                display: inline-block;
+                vertical-align: bottom;
+                width: 25px;
+                height: 16px;
+                cursor: pointer;
+            }
+
+            .menu-icon::after {
+                /* the block itself, the first line */
+                background: $color-violet;
+                /* middle and bottom */
+                box-shadow: 0 7px 0 $color-violet, 0 14px 0 $color-violet;
+                /* respect WebKit */
+                -webkit-box-shadow: 0 7px 0 $color-violet, 0 14px 0 $color-violet;
+            }
+        }
+
+    }
+}
+
+
+.top-menu-btn {
+    background-color: $light-gray;
+    margin: 0 .5rem;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    display: inline-block;
+    line-height: 32px;
+    // vertical-align: middle;
+    border-radius: 50%;
+    // padding: 2px;
+    color: black;
+    border: solid 2px transparent;
+
+    &:visited {
+        color: black;
+    }
+    
+    
+    img{
+        vertical-align: top;
+        border-radius: 50%;
+    }
+}
+
+.top-active{
+    border: solid 2px $color-verde-fosf;
+}
+
+.the-search {
+    background-color: rgba(255, 255, 255, 0.9);
+    // padding-top: 1rem;
+    // padding-bottom: 1px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    z-index: 9;   
+
+    .search-group{
+        max-width: 1000px;
+        margin: 0 auto;
+        span{
+            padding-left: .5rem;
+        }
+    }
+    
+}
+
+.search-cover{
+    background: rgba(0, 0, 0, 0.1);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+}
+
+.placechange {
+    background-color:transparent;
+    border-radius: 0;
+    border: none;
+    padding: 1rem .5rem;
+    // background-color: red;
+    height: auto;
+    margin: 0;
+    box-shadow: none;
+    font-size: 1.5rem;
+    text-align: right;
+    display: inline;
+    width: 90%;
+
+    &:focus{
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+    }
+}
+
+.placechange::placeholder{
+    color: $dark-gray;
 }
 

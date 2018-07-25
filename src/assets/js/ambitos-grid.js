@@ -14,7 +14,7 @@ function createMasonry() {
   return new Masonry('.grid', {
     // options...
     itemSelector: '.grid-item',
-    gutter: 2,
+    // gutter: 2,
     isFitWidth: true,
   });
 }

@@ -71,11 +71,61 @@ import Foundation from 'foundation-sites';
 $(document).foundation();
 
 
-$('.title-bar').on('sticky.zf.stuckto:top', function () {
-  $(this).addClass('shrink');
-}).on('sticky.zf.unstuckfrom:top', function () {
-  $(this).removeClass('shrink');
+$( "#search-btn" ).click(function() {
+  searchMenuClick();
 });
+
+
+$( "#ham-btn" ).click(function() {
+  menuShow();
+});
+
+$('.menu-cover').on('click', function(){
+  menuShow();
+});
+
+$('.search-cover').on('click', function(){
+  searchMenuClick();
+})
+
+function searchMenuClick() {
+  var menuSatus = $('.main-menu').css('display');
+  if (menuSatus == 'block') {
+    menuShow();
+  }
+  $("#search-box").slideToggle();
+  $(".search-cover").fadeToggle();
+  if ($("#searcher").is(":focus")) {
+    $("#searcher").blur();
+  }
+  else {
+    $("#searcher").focus();
+  }
+  $("#search-btn").toggleClass("top-active");
+}
+
+function menuShow() {
+  var searchStatus = $('#search-box').css('display');
+  if (searchStatus == 'block'){
+    $( "#search-box" ).slideToggle();
+    $(".search-cover").fadeToggle();
+    $( "#search-btn" ).toggleClass("top-active");
+    $("#searcher").blur();
+  }
+  var menuSatus = $('.main-menu').css('display');
+  if (menuSatus == 'block'){
+    $("#ham-btn").hide().html(' <i class="fas fa-bars"></i>').fadeIn();
+  } else if (menuSatus == 'none') {
+    $("#ham-btn").hide().html(' <i class="fa fa-times"></i>').fadeIn();
+  }
+  $(".main-menu").slideToggle();
+  $('.menu-cover').fadeToggle();
+}
+// $('.title-bar').on('sticky.zf.stuckto:top', function () {
+//   $(this).addClass('shrink');
+// }).on('sticky.zf.unstuckfrom:top', function () {
+//   $(this).removeClass('shrink');
+// });
 
 
 

@@ -38,10 +38,12 @@
     left: 50%;
     transform: translateX(-50%);    
     z-index: 11;
-    @include breakpoint(350px){
+    width: 20%;
+
+    @include breakpoint(300px){
         width: 50%;
     }
-    @media (max-height: 400px){
+    @media (max-height: 500px){
         width: 30%;
     }
 
@@ -107,7 +109,7 @@
     font-size: 1.3rem;
     padding-top: .4rem;
     position: absolute;
-    bottom: 10%;
+    bottom: 1rem;
     right: 1rem;
     z-index: 11;
     color: $color-violet;
@@ -366,7 +368,8 @@ symbol {
 
 .uoda-container {
     @include xy-grid;
-     @include breakpoint(400px down){
+    @include flex-align($x: center);
+     @include breakpoint(450px down){
        margin-top: 50%;
     }
 }
@@ -386,17 +389,19 @@ symbol {
     // }
     @include breakpoint(900px){
         @include xy-cell(7);
-        @include xy-cell-offset(2);
+        // @include flex-align($x: center);
+        // @include xy-cell-offset(2);
         // width: 300px;
         // padding-bottom: 200px;
     }
     @include breakpoint(500px){
         @include xy-cell(8);
-        @include xy-cell-offset(2);
+        // @include xy-cell-offset(2);
     }
     // border: solid 1px black;
     // background-color:violet;
     // position: relative;
+    text-align: center;
 }
 
 .micro-momentos {
