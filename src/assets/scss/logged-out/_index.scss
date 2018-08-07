@@ -93,6 +93,7 @@
     font-size: 1.5rem;
     margin-top: 5px;
     color: $color-violet;
+    width: 21px;
 }
 
 
@@ -157,17 +158,19 @@
         margin: 0 auto;
         padding: 5px 8px;
         overflow: hidden;
+        display: flex;
         
 
-        &-right{
-            float: right;
-        }
+        // &-right{
+        //     float: right;
+        // }
 
-        &-left{
-            float: left;
+        // &-left{
+            // float: left;
 
             .top-nav-title{
                 padding-left: .5rem;
+                flex: 1;
         
                 img {
                     vertical-align: top;
@@ -192,7 +195,7 @@
                 /* respect WebKit */
                 -webkit-box-shadow: 0 7px 0 $color-violet, 0 14px 0 $color-violet;
             }
-        }
+        // }
 
     }
 }
@@ -200,12 +203,12 @@
 
 .top-menu-btn {
     background-color: $light-gray;
-    margin: 0 .5rem;
+    margin: 0 0 0 1rem ;
     height: 32px;
     width: 32px;
     text-align: center;
-    display: inline-block;
-    line-height: 32px;
+    // display: inline-block;
+    line-height: 31px;
     // vertical-align: middle;
     border-radius: 50%;
     // padding: 2px;

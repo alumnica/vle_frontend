@@ -54,6 +54,15 @@ import flip from 'flip';
 import fullpage from 'fullpage.js';
 
 import Foundation from 'foundation-sites';
+
+// import TinCan from 'tincanjs';
+
+// window.TinCan = TinCan;
+
+import TimeMe from 'timeme.js';
+
+window.TimeMe = TimeMe;
+
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 //import './lib/foundation-explicit-pieces';

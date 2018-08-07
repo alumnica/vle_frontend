@@ -114,14 +114,21 @@
     z-index: 11;
     color: $color-violet;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-    @include breakpoint(1000px){
-        width: 5rem;
-        height: 5rem;
-        border-radius: 5rem;
-        font-size: 2rem;
-        padding-top: .9rem;
-        top: 85vh;
-        right: 2rem;
+    @include breakpoint(800px){
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 3.5rem;
+        font-size: 1.5rem;
+        padding-top: .5rem;
+        bottom: 1rem;
+        right: 1rem;
+        transform: scale(.8);
+        transition: all .2s;
+    }
+    
+    &:hover{
+        transition: all .2s;
+        transform: scale(1);
     }
 }
 
@@ -140,27 +147,40 @@
 // }
 
 .oda-title{
-    text-align: center;
-    font-size: 2rem;
+//     text-align: center;
+//     font-size: 2rem;
+//     font-weight: bold;
+//     margin-bottom: 1.5rem;
+//     margin-top: 10%;
+
+    // @media (max-height: 350px){
+    //     margin-top: 0;
+    //     margin-bottom: .5rem;
+    // }
+    // @media (max-height: 400px){
+    //     margin-top: 0;
+    // }
+    position: absolute;
+    top: 50px;
+    font-size: 1.8rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
-    margin-top: 10%;
-    @media (max-height: 350px){
-        margin-top: 0;
-        margin-bottom: .5rem;
-    }
-    @media (max-height: 400px){
-        margin-top: 0;
+    width: 100%;
+    text-align: center;
+    @include breakpoint(medium){
+        font-size: 2rem;
     }
 }
 
 .oda-desc {
     text-align: center;
     max-width: 1000px;
-    margin: 0 auto;
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
     @include breakpoint(1000px){
         padding: 0 6rem;
         font-size: 1.2rem;
+        margin-top: 3rem
     }
 }
 
@@ -221,6 +241,12 @@ a {
     stroke: transparent;
 }
 
+.item.active path {
+    fill:rgb(57, 233, 116);
+    // stroke-width: 5px;
+    transition: all .2s;
+}
+
 .e1{
     fill: darken($dark-gray, 10);    
 }
@@ -265,10 +291,13 @@ a {
 }
 
 
+
+
 .item:hover .sector,
 .item:focus .sector {
     fill: #eee;
 }
+
 
 .menu-trigger {
     fill: rgb(67, 253, 129);
@@ -369,14 +398,25 @@ symbol {
 .uoda-container {
     @include xy-grid;
     @include flex-align($x: center);
-     @include breakpoint(450px down){
-       margin-top: 50%;
+    // margin-top: 4rem;
+     @include breakpoint(800px){
+       margin-top: 3rem;
+       position: relative;
+       max-width: 1200px;
+       margin-left: auto;
+       margin-right: auto;
     }
 }
 
 .micro-image {
     // display: block;
     @include xy-cell(12);
+    // border: solid 1px black;
+
+    video{
+        // max-height: 10%;
+        max-width: 100%;
+    }
     
     // width: 900px;
     // padding-bottom: 550px;
@@ -388,7 +428,7 @@ symbol {
         
     // }
     @include breakpoint(900px){
-        @include xy-cell(7);
+        @include xy-cell(8);
         // @include flex-align($x: center);
         // @include xy-cell-offset(2);
         // width: 300px;
@@ -402,19 +442,20 @@ symbol {
     // background-color:violet;
     // position: relative;
     text-align: center;
+    margin-top: 3rem;
 }
 
 .micro-momentos {
     
-    @include xy-cell(12);
+    // @include xy-cell(12);
     
-    @include breakpoint(900px){
-        @include xy-cell(3);
-        margin-top: 10%;     
-    }
-    @include breakpoint(500px){
-        @include xy-cell(2);
-    }
+    // @include breakpoint(900px){
+    //     @include xy-cell(3);
+    //     // margin-top: 10%;     
+    // }
+    // @include breakpoint(500px){
+    //     @include xy-cell(2);
+    // }
     // position: ;
     // top: 0;
     // left: -1rem;
@@ -453,19 +494,30 @@ symbol {
     //     text-align: center;
     //     padding-top: 4px;
     // }
+    display: flex;
+    @include breakpoint(800px){
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+    }
+    @include breakpoint(500px){
+        flex-direction: column;
+        position: absolute;
+        right: 3rem;
+    }
 }
 
 .momento{
-    height: 6rem;
-    margin: 1rem;
-    @include breakpoint(700px down){
-        height: 4rem;
-        margin: .5rem;
+    
+    flex: 1;
+    text-align: center;
+    height: 4rem;
+    margin: .5rem;
+    @include breakpoint(800px){
+        height: 6rem;
+        margin: 1rem;
     }
-    @include breakpoint(400px down){
-        display: inline-block;
-
-    }
+  
 
     img {
         max-width: 100%;

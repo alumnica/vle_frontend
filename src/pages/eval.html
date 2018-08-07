@@ -2,6 +2,26 @@
 layout: logged-in 
 name: For logged in Users 
 ---
+
+<div class='container' id="preloader">
+    <div class='loader'>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--dot'></div>
+        <div class='loader--text'></div>
+    </div>
+</div>
+
+<script>
+    setTimeout(function(){
+        document.getElementById("preloader").classList.add("is-load");
+    }, 1000);
+</script>
+<!-- end preloader -->
+
 <div class="scroll-menu">
     <ul id="evalMenu">
         <li data-menuanchor="firstPage" class="active"><a href="#firstPage"><i class="far fa-bookmark"></i></a></li>
@@ -20,9 +40,7 @@ name: For logged in Users
     </ul>
 </div>
  <!-- return buttons -->
- <a href="ambitos-grid.html" class="eval-grid-btn">
-    <i class="fas fa-th"></i>
-</a>
+
 <a href="materia.1.html" class="eval-return-btn">
     <i class="fas fa-undo-alt"></i>
 </a>
@@ -233,7 +251,7 @@ name: For logged in Users
                 <br> Entonces, ¿cuanto es 1+1?
             </div>
             <div class="number-answer">
-                <input type="number">
+                <input type="text">
             </div>
             
         </div>
@@ -245,7 +263,7 @@ name: For logged in Users
                 <br> Entonces, ¿cuanto es 1+1?
             </div>
             <div class="number-answer">
-                <input type="number">
+                <input type="text">
             </div>
             
         </div>

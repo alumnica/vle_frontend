@@ -539,12 +539,12 @@
     z-index: 11;
     color: $color-violet;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-    @include breakpoint(1000px){
-        width: 5rem;
-        height: 5rem;
-        border-radius: 5rem;
-        font-size: 2rem;
-        padding-top: .9rem;
+    @include breakpoint(800px){
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 3.5rem;
+        font-size: 1.5rem;
+        padding-top: .5rem;
         bottom: 1rem;
         right: 1rem;
         transform: scale(.8);
