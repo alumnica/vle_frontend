@@ -79,7 +79,7 @@ window.TimeMe = TimeMe;
 
 $(document).foundation();
 
-
+//top navigation bar behaviour
 $( "#search-btn" ).click(function() {
   searchMenuClick();
 });
@@ -153,3 +153,22 @@ function menuShow() {
 //     confirmButtonText: 'Cool'
 //   })
 
+// time
+
+
+TimeMe.initialize({
+  // currentPageName: document.title, // current page
+  idleTimeoutInSeconds: 30 // seconds
+});		
+
+
+// window.onbeforeunload = function (event) {
+// 	// xmlhttp=new XMLHttpRequest();
+// 	// xmlhttp.open("POST","ENTER_URL_HERE", true);
+// 	// xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+//   var timeSpentOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
+//   var duration = timeSpentOnPage.toString().slice(0,-1);
+//   duration = `P${duration}S`;
+//   console.log(duration);
+//   // xmlhttp.send(duration);
+// };
