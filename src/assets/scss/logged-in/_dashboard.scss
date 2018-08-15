@@ -179,6 +179,41 @@
     }
 
     &-content {
-       
+       @include breakpoint(medium){
+        height: 430px;
+        overflow: auto;
+       }
+    //    display: flex
     }
 }
+
+.feed-item-title {
+    font-size: 1.2rem;
+    // flex-basis: 100%;
+}
+
+.feed-img{
+   @include breakpoint(medium){
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+   }
+   text-align: center;
+   margin-bottom: 15px;
+}
+.feed-text {
+    @include breakpoint(medium){
+        display: inline-block;
+        width: 65%;
+    }
+    
+}
+.rss2html-note{
+    display: none;
+}
+// The title of the feed is displayed in a <h3> tag, with the class feed-title.
+// The feed description is displayed in a <p> tag with class feed-desc.
+// The feed icon is displayed in an <img> tag with class feed-title-image.
+// Each feed item title is displayed in a <h4> tag with class feed-item-title.
+// Each feed item description is displayed in a <p> tag with class feed-item-desc. 

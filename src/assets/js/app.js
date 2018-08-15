@@ -26,6 +26,7 @@ window.Masonry = Masonry;
 import fontawesome from '@fortawesome/fontawesome';
 import solid from '@fortawesome/fontawesome-free-solid';
 import regular from '@fortawesome/fontawesome-free-regular';
+import brands from '@fortawesome/fontawesome-free-brands';
 
 // import faStar from '@fortawesome/fontawesome-free-solid/faStar';
 // import faFlagCheckered from '@fortawesome/fontawesome-free-solid/faFlagCheckered';
@@ -37,6 +38,7 @@ import regular from '@fortawesome/fontawesome-free-regular';
 
 fontawesome.library.add(solid);
 fontawesome.library.add(regular);
+fontawesome.library.add(brands);
 
 //jquery ui 
 
@@ -136,6 +138,16 @@ function menuShow() {
 //   $(this).removeClass('shrink');
 // });
 
+$( "#ham-btn-out" ).click(function() {
+  var menuSatus = $('.out-menu').css('display');
+  if (menuSatus == 'block'){
+    $("#ham-btn-out").hide().html(' <i class="fas fa-bars"></i>').fadeIn();
+  } else if (menuSatus == 'none') {
+    $("#ham-btn-out").hide().html(' <i class="fa fa-times"></i>').fadeIn();
+  }
+  $(".out-menu").slideToggle();
+  $('.menu-cover-out').fadeToggle();
+});
 
 
 // var hamburger = document.querySelector(".hamburger");

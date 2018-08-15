@@ -149,7 +149,7 @@
     z-index: 10;
     box-shadow: 0 1px 3px rgba(0,0,0,.1);
     @include breakpoint(medium){
-        margin-bottom: 1rem;
+        // margin-bottom: 1rem;
     }
     
 
@@ -169,7 +169,7 @@
             // float: left;
 
             .top-nav-title{
-                padding-left: .5rem;
+                padding-left: 1rem;
                 flex: 1;
         
                 img {
@@ -280,5 +280,43 @@
 
 .placechange::placeholder{
     color: $dark-gray;
+}
+
+.out-menu{
+    background-color: white;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    top: 45px;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+
+    ul{
+        max-width: 1200px;
+        margin: 0 auto;
+        list-style: none;
+        @include breakpoint(medium){
+            text-align: center;
+        }
+
+    }
+
+    li {
+        padding: 1rem;
+
+        img{
+            height:18px;
+        }
+    }
+
+}
+
+.menu-cover-out{
+    background: rgba(0, 0, 0, 0.1);
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
 }
 

@@ -73,9 +73,81 @@
 
 
 .social-login {
-    margin-top: 2rem;
+    margin-top: 1rem;
     @include breakpoint(medium){
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
     
+}
+
+.goog{ 
+    text-align: center;
+    margin-bottom: 1rem;
+    &-button{
+        border: solid 1px $color-primary;
+        display: block;
+        height: 3rem;
+        width: 14rem;
+        margin: 0 auto;
+        display: flex;
+        // transform: translateX(50%);
+        justify-content: center;
+        border-radius: 2rem;
+        transition: all .2s;
+        // padding-left: 1rem;
+
+        &:hover{
+            box-shadow: 0 0 5px rgba($color-primary, .5)
+        }
+
+        .fa-google{
+            align-self: center;
+            font-size: 2rem;
+            color:$color-primary;
+        }
+        span{
+            align-self: center;
+            margin-left: 10px;
+            color: $color-primary;
+        }
+
+    }
+}
+.face{ 
+    text-align: center;
+    margin-bottom: 1rem;
+    &-button{
+        // border: solid 1px $color-primary;
+        background-color: $color-primary;
+        display: block;
+        height: 3rem;
+        width: 14rem;
+        margin: 0 auto;
+        display: flex;
+        // transform: translateX(50%);
+        justify-content: center;
+        border-radius: 2rem;
+        transition: all .2s;
+        // padding-left: 1rem;
+
+        &:hover{
+            box-shadow: 0 0 5px rgba($color-primary, .5)
+        }
+
+        .fa-facebook{
+            align-self: center;
+            font-size: 2rem;
+            color: white;
+        }
+        span{
+            align-self: center;
+            margin-left: 10px;
+            color: white;
+        }
+
+    }
+}
+
+.login-padding {
+    padding: 1rem;
 }
