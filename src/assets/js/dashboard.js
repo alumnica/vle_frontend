@@ -1,3 +1,5 @@
+// unused now
+
 $('#materias-slider').owlCarousel({
     loop: true,
     margin: 0,
@@ -27,3 +29,5 @@ $('#materias-slider').owlCarousel({
     items: 4,
     dots: false,
   });
+
+

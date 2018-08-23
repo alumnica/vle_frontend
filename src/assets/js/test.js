@@ -1,3 +1,4 @@
+// for testing purposes only
 $(document).ready(function () {
    
     $('#test-end').on('click', function(e){

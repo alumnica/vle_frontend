@@ -1,4 +1,4 @@
-# Alumnica VLE front end with Foundation ZURB Template
+# Alumnica VLE front end with Foundation  6.4.3 ZURB Template
 
 This is the front end static dev for the Alumnica VLE Project. It includes the follwwiung
 
@@ -10,6 +10,22 @@ This is the front end static dev for the Alumnica VLE Project. It includes the f
   - CSS compression
   - JavaScript compression
   - Image compression
+
+  For information on Fhow to use Foundation ZURB Template visit:
+  
+  https://foundation.zurb.com/sites/docs/
+
+ Almost every HTML page has a corresponding SASS file.
+
+ All JS files are for proof of concept only. Full funcitonality is  applied in vle_webapp
+
+ For vle_webapp run `npm run build` , from the 'Dist' foled that is created only copy the following:
+ - assets/css/app.css
+ - assets/js/app.css
+ - assets/media (all of it)
+ - assets/fonts
+
+ Everything else should be pulled from the 'src' folder, as all HTML and JS from 'dist' is made for static pages.
 
 ## Installation
 

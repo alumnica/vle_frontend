@@ -1,5 +1,7 @@
-$(document).ready(function () {
+// functions for materias.html
 
+$(document).ready(function () {
+    // moves all odas to their corresponding place inside each materia block
     $('.block').each(function () {
 
         var theState = $(this).attr('state');

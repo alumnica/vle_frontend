@@ -1,3 +1,5 @@
+// controlls touchtip behaviour in materias.html
+
 $(document).ready(function(){
     $('.block').on('click', function(e){
         e.stopPropagation(); // <--------------stop here

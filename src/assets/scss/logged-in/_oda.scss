@@ -1,14 +1,4 @@
-// .oda-nav-items {
-//     position: absolute;
-//     height: 100%;
-//     width: 100%;
-//     top: 0;
-//     z-index: 50;
-//     @include breakpoint(1000px){
-//         max-width: 1000px;
-//         margin-left: calc((100vw - 1000px) / 2);
-//     }
-// }
+// styles for oda.html
 
 #fullpage{
     top: -3.2rem;
@@ -147,19 +137,6 @@
 // }
 
 .oda-title{
-//     text-align: center;
-//     font-size: 2rem;
-//     font-weight: bold;
-//     margin-bottom: 1.5rem;
-//     margin-top: 10%;
-
-    // @media (max-height: 350px){
-    //     margin-top: 0;
-    //     margin-bottom: .5rem;
-    // }
-    // @media (max-height: 400px){
-    //     margin-top: 0;
-    // }
     position: absolute;
     top: 50px;
     font-size: 1.8rem;
@@ -169,7 +146,7 @@
     @include breakpoint(medium){
         font-size: 2rem;
     }
-    z-index: 100;
+    z-index:1 ;
     color: black;
     transition: all .2s;
     a{

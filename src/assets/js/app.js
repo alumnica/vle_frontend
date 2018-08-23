@@ -57,26 +57,12 @@ import fullpage from 'fullpage.js';
 
 import Foundation from 'foundation-sites';
 
-// import TinCan from 'tincanjs';
-
-// window.TinCan = TinCan;
+// timeing function for data collection
 
 import TimeMe from 'timeme.js';
 
 window.TimeMe = TimeMe;
 
-// If you want to pick and choose which modules to include, comment out the above and uncomment
-// the line below
-//import './lib/foundation-explicit-pieces';
-
-
-// Register service worker to control making site work offline
-
-// if('serviceWorker' in navigator) {
-//   navigator.serviceWorker
-//            .register('/static/webapp/PWA/serviceWorker.js')
-//            .then(function() { console.log('Service Worker Registered'); });
-// }
 
 
 $(document).foundation();
@@ -132,11 +118,6 @@ function menuShow() {
   $(".main-menu").slideToggle();
   $('.menu-cover').fadeToggle();
 }
-// $('.title-bar').on('sticky.zf.stuckto:top', function () {
-//   $(this).addClass('shrink');
-// }).on('sticky.zf.unstuckfrom:top', function () {
-//   $(this).removeClass('shrink');
-// });
 
 $( "#ham-btn-out" ).click(function() {
   var menuSatus = $('.out-menu').css('display');
@@ -149,38 +130,11 @@ $( "#ham-btn-out" ).click(function() {
   $('.menu-cover-out').fadeToggle();
 });
 
-
-// var hamburger = document.querySelector(".hamburger");
-// // On click
-// hamburger.addEventListener("click", function() {
-//   // Toggle class "is-active"
-//   hamburger.classList.toggle("is-active");
-//   // Do something else, like open/close menu
-// });
-
-// swal({
-//     title: 'Error!',
-//     text: 'Do you want to continue',
-//     type: 'error',
-//     confirmButtonText: 'Cool'
-//   })
-
-// time
+// initialize counting time spent on page
 
 
 TimeMe.initialize({
-  // currentPageName: document.title, // current page
+  
   idleTimeoutInSeconds: 30 // seconds
 });		
 
-
-// window.onbeforeunload = function (event) {
-// 	// xmlhttp=new XMLHttpRequest();
-// 	// xmlhttp.open("POST","ENTER_URL_HERE", true);
-// 	// xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-//   var timeSpentOnPage = TimeMe.getTimeOnCurrentPageInSeconds();
-//   var duration = timeSpentOnPage.toString().slice(0,-1);
-//   duration = `P${duration}S`;
-//   console.log(duration);
-//   // xmlhttp.send(duration);
-// };

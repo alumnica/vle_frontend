@@ -1,46 +1,23 @@
+// functions that controll all of the evaluation behaviour.
+
 $(document).ready(function () {
     var finished = false;
     
+    // starts fullpage.js
     $('#evaluate').fullpage({
         verticalCentered: false,
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'eighthPage', 'ninethPage', 'tenthPage', 'eleventhPage', 'twelvethPage'],
         menu: '#evalMenu',
-
-        // afterLoad: function(anchorLink, index){
-        //     var loadedSection = $(this);
-    
-        //     if(anchorLink == 'eleventhPage' && finished ==false){
-        //         $.fn.fullpage.setAllowScrolling(false, 'down');
-        //     } else if (anchorLink != 'eleventhPage' && finished == false) {
-        //         $.fn.fullpage.setAllowScrolling(true);
-        //     } else {
-        //         $.fn.fullpage.setAllowScrolling(true);
-        //     }
-        // }
  
     });
 
-    // $.fn.fullpage.setAllowScrolling(false, 'down');
-    // $.fn.fullpage.setKeyboardScrolling(false);
-
-    $('.next').on('click', '.button', function () {
-        $.fn.fullpage.moveSectionDown();
-    });
-
-
+    //finish evaluation and show score screen
     $('.end button').click(function(){
         $(this).parent().parent().remove();
         $('.the-score').fadeIn(500);
     });
 
-
-    // $('.reveal').on('click', '#end-eval', function () {
-    //    finished = true;
-    //    $(".question :input").attr("disabled", true);
-    //    $('.reset').hide();
-    //    $.fn.fullpage.moveSectionDown();
-    //    $('#score').attr('href', '#twelvethPage');
-    // });
+    // starts all quesiton logic
 
     var relAnswersLength = $('.question[question-type="relationship"]').length;
     var relMOAnswersLength = $('.question[question-type="multiple_option"]').length;
@@ -289,6 +266,10 @@ $(document).ready(function () {
         
 
     });
+    // end all question logic
+
+    
+    // centers the question on the screen.
 
     $('.question').each(function () {
         
@@ -332,15 +313,7 @@ $(document).ready(function () {
 
 });
 
-// $(window).on('changed.zf.mediaquery', function(event, newSize, oldSize){
-//     // Inital state small -> medium 
-//     console.log(newSize); // should return medium
-//     console.log(oldSize); // should return small
-// });
 
-$('#tester').fullpage({
-    verticalCentered: false,
-});
 
 $('.the-tab').click(function(){
     $(this).parent().toggleClass('closed1');

@@ -1,4 +1,7 @@
+// For avatar change
+
 $('#selected-avatar').val($('.avatar-main img').attr('id'));
+
 
 $('.avatar-options').on('click', 'img', function(){
     var clicked = $(this);
