@@ -18,6 +18,7 @@
     "jquery-ui": "^1.12.1",
     "motion-ui": "~1.2.2",
     "npm": "^5.7.1",
+    "progressbar.js": "^1.0.1",
     "timeme.js": "^2.0.3",
     "tincanjs": "^0.50.0",
     "what-input": "^4.1.3"
