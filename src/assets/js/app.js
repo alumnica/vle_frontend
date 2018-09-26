@@ -9,7 +9,6 @@ import whatInput from 'what-input';
 
 window.$ = $;
 
-
 //Sweet Alert
 
 import swal from 'sweetalert2';
@@ -40,7 +39,7 @@ fontawesome.library.add(solid);
 fontawesome.library.add(regular);
 fontawesome.library.add(brands);
 
-//jquery ui 
+//jquery ui
 
 import 'jquery-ui/ui/widgets/tooltip';
 import 'jquery-ui/ui/widgets/selectable';
@@ -49,7 +48,6 @@ import 'jquery-ui/ui/effects/effect-slide';
 // flip
 
 import flip from 'flip';
-
 
 //fullpage.js
 
@@ -65,78 +63,86 @@ window.TimeMe = TimeMe;
 
 // progressbar.js
 
-
+import ProgressBar from 'progressbar.js';
+window.ProgressBar = ProgressBar;
 
 $(document).foundation();
 
 //top navigation bar behaviour
-$( "#search-btn" ).click(function() {
+$('#search-btn').click(function() {
   searchMenuClick();
 });
 
-
-$( "#ham-btn" ).click(function() {
+$('#ham-btn').click(function() {
   menuShow();
 });
 
-$('.menu-cover').on('click', function(){
+$('.menu-cover').on('click', function() {
   menuShow();
 });
 
-$('.search-cover').on('click', function(){
+$('.search-cover').on('click', function() {
   searchMenuClick();
-})
+});
 
 function searchMenuClick() {
   var menuSatus = $('.main-menu').css('display');
   if (menuSatus == 'block') {
     menuShow();
   }
-  $("#search-box").slideToggle();
-  $(".search-cover").fadeToggle();
-  if ($("#searcher").is(":focus")) {
-    $("#searcher").blur();
+  $('#search-box').slideToggle();
+  $('.search-cover').fadeToggle();
+  if ($('#searcher').is(':focus')) {
+    $('#searcher').blur();
+  } else {
+    $('#searcher').focus();
   }
-  else {
-    $("#searcher").focus();
-  }
-  $("#search-btn").toggleClass("top-active");
+  $('#search-btn').toggleClass('top-active');
 }
 
 function menuShow() {
   var searchStatus = $('#search-box').css('display');
-  if (searchStatus == 'block'){
-    $( "#search-box" ).slideToggle();
-    $(".search-cover").fadeToggle();
-    $( "#search-btn" ).toggleClass("top-active");
-    $("#searcher").blur();
+  if (searchStatus == 'block') {
+    $('#search-box').slideToggle();
+    $('.search-cover').fadeToggle();
+    $('#search-btn').toggleClass('top-active');
+    $('#searcher').blur();
   }
   var menuSatus = $('.main-menu').css('display');
-  if (menuSatus == 'block'){
-    $("#ham-btn").hide().html(' <i class="fas fa-bars"></i>').fadeIn();
+  if (menuSatus == 'block') {
+    $('#ham-btn')
+      .hide()
+      .html(' <i class="fas fa-bars"></i>')
+      .fadeIn();
   } else if (menuSatus == 'none') {
-    $("#ham-btn").hide().html(' <i class="fa fa-times"></i>').fadeIn();
+    $('#ham-btn')
+      .hide()
+      .html(' <i class="fa fa-times"></i>')
+      .fadeIn();
   }
-  $(".main-menu").slideToggle();
+  $('.main-menu').slideToggle();
   $('.menu-cover').fadeToggle();
 }
 
-$( "#ham-btn-out" ).click(function() {
+$('#ham-btn-out').click(function() {
   var menuSatus = $('.out-menu').css('display');
-  if (menuSatus == 'block'){
-    $("#ham-btn-out").hide().html(' <i class="fas fa-bars"></i>').fadeIn();
+  if (menuSatus == 'block') {
+    $('#ham-btn-out')
+      .hide()
+      .html(' <i class="fas fa-bars"></i>')
+      .fadeIn();
   } else if (menuSatus == 'none') {
-    $("#ham-btn-out").hide().html(' <i class="fa fa-times"></i>').fadeIn();
+    $('#ham-btn-out')
+      .hide()
+      .html(' <i class="fa fa-times"></i>')
+      .fadeIn();
   }
-  $(".out-menu").slideToggle();
+  $('.out-menu').slideToggle();
   $('.menu-cover-out').fadeToggle();
 });
 
 // initialize counting time spent on page
 
-
 TimeMe.initialize({
-  
-  idleTimeoutInSeconds: 30 // seconds
-});		
-
+  idleTimeoutInSeconds: 30, // seconds
+});

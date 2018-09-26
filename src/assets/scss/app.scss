@@ -4,7 +4,7 @@
 @import 'foundation';
 @import 'motion-ui';
 
-@import "components/bryant-font.scss";
+@import 'components/bryant-font.scss';
 
 @include foundation-global-styles;
 // @include foundation-grid;
@@ -54,37 +54,34 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-
-
 // @import 'owl.carousel';
 // @import 'owl.theme.default';
 // @import 'tooltip.css';
 
-@import "components/utilities";
-@import "components/first-q-forms";
-@import "components/arrows";
-@import "components/touchtip";
-@import "components/preloader";
+@import 'components/utilities';
+@import 'components/first-q-forms';
+@import 'components/arrows';
+@import 'components/touchtip';
+@import 'components/preloader';
 
-@import "logged-out/index";
-@import "logged-out/login";
-@import "logged-out/splash";
+@import 'logged-out/index';
+@import 'logged-out/login';
+@import 'logged-out/splash';
 
-@import "logged-in/user-bar";
-@import "logged-in/dashboard";
-@import "logged-in/ambitos-grid";
-@import "logged-in/materia";
-@import "logged-in/animations";
-@import "logged-in/oda";
-@import "logged-in/momentos";
-@import "logged-in/eval";
-@import "logged-in/eval-inputs";
-@import "logged-in/user-profile";
-@import "logged-in/search";
-@import "logged-in/recent";
-
+@import 'logged-in/user-bar';
+@import 'logged-in/dashboard';
+@import 'logged-in/ambitos-grid';
+@import 'logged-in/materia';
+@import 'logged-in/animations';
+@import 'logged-in/oda';
+@import 'logged-in/momentos';
+@import 'logged-in/eval';
+@import 'logged-in/eval-inputs';
+@import 'logged-in/user-profile';
+@import 'logged-in/search';
+@import 'logged-in/recent';
+@import 'logged-in/notification';
 
 @import 'custom';
 
-
-@import 'vendors/jquery.fullpage'
+@import 'vendors/jquery.fullpage';

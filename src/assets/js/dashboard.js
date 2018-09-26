@@ -1,33 +1,44 @@
-// unused now
-
-$('#materias-slider').owlCarousel({
-    loop: true,
-    margin: 0,
-    nav: false,
-    responsive:{
-        0:{
-            items:3,
-            nav:true
-        },
-        600:{
-            items:4,
-            nav:false
-        },
+const notification = {
+  active: true,
+  qty: 2,
+  notis: [
+    {
+      img: '../assets/media/tuerca-01.png',
+      head: 'Nuevo nivel',
+      title: 'subiste nivel!!!!!!',
     },
-    dots: false,
-    autoplay: true,
-    autoplayTimeout: 3500,
-    autoplayHoverPause: true,
-    
-  });
+    {
+      img: '../assets/media/profile-pic.png',
+      head: 'Badge Aquired',
+      title: 'Propedeutico de propedeuticos',
+    },
+  ],
+};
 
+if (notification.active === true) {
+  let qty = notification.qty;
+  for (let i = 0; i < qty; i++) {
+    $('.notification-wrapper').append(
+      `
+      <div class="notification">
+      <div class="notification_image">
+          <img src="${notification.notis[i].img}" alt="">
+      </div>
+      <div class="notification_text">
+          <p class="notification_text_head">${notification.notis[i].head}</p>
+          <p class="notification_text_title">${notification.notis[i].title}</p>
+      </div>
+  </div>
+      `
+    );
+  }
 
-  $('#insignias-slider').owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: false,
-    items: 4,
-    dots: false,
-  });
+  $('.notification-wrapper').fadeIn();
+  setTimeout(function() {
+    $('.notification-wrapper').fadeOut();
+  }, 5000);
+}
 
-
+$('.notification-wrapper').on('click', '.notification', function() {
+  $(this).fadeOut();
+});

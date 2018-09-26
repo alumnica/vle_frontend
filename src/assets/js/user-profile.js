@@ -1,12 +1,37 @@
-// For avatar change
+var bar = new ProgressBar.Line(progress, {
+  strokeWidth: 1,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: 'white',
+  trailColor: '#eee',
+  trailWidth: 1,
 
-$('#selected-avatar').val($('.avatar-main img').attr('id'));
+  from: { color: '#FFEA82' },
+  to: { color: '#38d430' },
+  step: (state, bar) => {
+    bar.path.setAttribute('stroke', state.color);
+  },
+  text: {
+    // Initial value for text.
+    // Default: null
+    value: '30,000',
 
-
-$('.avatar-options').on('click', 'img', function(){
-    var clicked = $(this);
-    var main = $('.avatar-main img');
-    clicked.parent().html(main);
-    $('.avatar-main').html(clicked);
-    $('#selected-avatar').val(clicked.attr('id'));
+    // Class name for text element.
+    // Default: 'progressbar-text'
+    className: 'progressbar__label',
+    style: 'null',
+  },
 });
+
+bar.animate(0.9); // Number from 0.0 to 1.0
+
+var avatarBar = new ProgressBar.Line(avatarProgress, {
+  strokeWidth: 1,
+  easing: 'easeInOut',
+  duration: 1400,
+  color: 'orange',
+  trailColor: '#eee',
+  trailWidth: 1,
+});
+
+avatarBar.animate(0.5); // Number from 0.0 to 1.0
