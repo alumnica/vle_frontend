@@ -46,3 +46,23 @@
     }
   }
 }
+
+// avatar notification and evolution
+
+.evol-container {
+  // height: 500px;
+  // width: 500px;
+  text-align: center;
+  position: relative;
+
+  // .avatar {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  // }
+}
+
+.slide-out-bck-center {
+  animation: slide-out-bck-center 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+}

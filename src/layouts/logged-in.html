@@ -9,54 +9,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alumnica | Logged in</title>
   <link rel="stylesheet" href="{{root}}assets/css/app.css">
-  <link rel="shortcut icon" 
-      type="image/png" 
-      href="../assets/media/alumnica-favico.png">
-      <!-- <link rel="manifest" href="manifest.json"> -->
+  <link rel="shortcut icon" type="image/png" href="../assets/media/alumnica-favico.png">
+  <!-- <link rel="manifest" href="manifest.json"> -->
 
 </head>
 
 <body>
 
 
-    
-      {{> nav-logged-in}}
 
-     
-      
-      {{>body}}
+  {{> nav-logged-in}}
 
- 
 
-    <script src="{{root}}assets/js/app.js"></script>
-    {{#ifpage 'materia' 'materia.1'}}
-      <script src="{{root}}assets/js/materias.js"></script>
-    {{/ifpage}}
-    {{#ifpage 'oda' 'oda-1'}}
-      <script src="{{root}}assets/js/oda-view.js"></script>
-    {{/ifpage}}
-    {{#ifpage 'materia.1'}}
-      <script src="{{root}}assets/js/touchtip.js"></script>
-    {{/ifpage}}
-    {{#ifpage 'eval'}}
-      <script src="{{root}}assets/js/eval.js"></script>
-    {{/ifpage}}
-    {{#ifpage 'momentos'}}
-      <script src="{{root}}assets/js/the-moments.js"></script>
-    {{/ifpage}}
-    {{#ifpage 'dashboard'}}
-      <script src="{{root}}assets/js/dashboard.js"></script>
-    {{/ifpage}}
-    {{#ifpage 'user-profile'}}
-      <script src="{{root}}assets/js/user-profile.js"></script>
-    {{/ifpage}}
-    {{#ifpage 'user-test'}}
-      <script src="{{root}}assets/js/test.js"></script>
-    {{/ifpage}}
-    <!-- {{#ifpage 'ambitos-grid'}} -->
-      <script src="{{root}}assets/js/ambitos-grid.js"></script>
-    <!-- {{/ifpage}} -->
-    
+
+  {{>body}}
+
+  <div class="notification-wrapper" style="display:none">
+
+  </div>
+
+
+
+  <script src="{{root}}assets/js/app.js"></script>
+  {{#ifpage 'materia' 'materia.1'}}
+  <script src="{{root}}assets/js/materias.js"></script>
+  {{/ifpage}}
+  {{#ifpage 'oda' 'oda-1'}}
+  <script src="{{root}}assets/js/oda-view.js"></script>
+  {{/ifpage}}
+  {{#ifpage 'materia.1'}}
+  <script src="{{root}}assets/js/touchtip.js"></script>
+  {{/ifpage}}
+  {{#ifpage 'eval'}}
+  <script src="{{root}}assets/js/eval.js"></script>
+  {{/ifpage}}
+  {{#ifpage 'momentos'}}
+  <script src="{{root}}assets/js/the-moments.js"></script>
+  {{/ifpage}}
+  {{#ifpage 'dashboard'}}
+  <script src="{{root}}assets/js/dashboard.js"></script>
+  <script src="{{root}}assets/js/progressBar.js"></script>
+  {{/ifpage}}
+  {{#ifpage 'user-profile'}}
+  <script src="{{root}}assets/js/progressBar.js"></script>
+  <script src="{{root}}assets/js/user-profile.js"></script>
+  {{/ifpage}}
+  {{#ifpage 'user-test'}}
+  <script src="{{root}}assets/js/test.js"></script>
+  {{/ifpage}}
+  <!-- {{#ifpage 'ambitos-grid'}} -->
+  <script src="{{root}}assets/js/ambitos-grid.js"></script>
+  <!-- {{/ifpage}} -->
+
 </body>
 
 </html>
