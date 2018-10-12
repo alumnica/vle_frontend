@@ -85,6 +85,10 @@ $('.search-cover').on('click', function() {
   searchMenuClick();
 });
 
+$('#noti-btn').click(function() {
+  notiShow();
+});
+
 function searchMenuClick() {
   var menuSatus = $('.main-menu').css('display');
   if (menuSatus == 'block') {
@@ -122,6 +126,15 @@ function menuShow() {
   }
   $('.main-menu').slideToggle();
   $('.menu-cover').fadeToggle();
+}
+
+function notiShow() {
+  var notiStatus = $('.noti-cont').css('display');
+  if (notiStatus == 'block') {
+    $('.noti-cont').slideToggle(200);
+  } else {
+    $('.noti-cont').slideToggle(200);
+  }
 }
 
 $('#ham-btn-out').click(function() {

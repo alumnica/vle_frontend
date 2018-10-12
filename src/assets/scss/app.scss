@@ -61,6 +61,7 @@
 @import 'animations';
 
 @import 'components/utilities';
+@import 'components/top-nav';
 @import 'components/first-q-forms';
 @import 'components/arrows';
 @import 'components/touchtip';
@@ -68,6 +69,8 @@
 @import 'components/logros';
 @import 'components/badges';
 @import 'components/reciente';
+@import 'components/noti';
+@import 'components/progress_bar';
 
 @import 'logged-out/index';
 @import 'logged-out/login';
@@ -85,7 +88,6 @@
 @import 'logged-in/user-profile';
 @import 'logged-in/search';
 @import 'logged-in/recent';
-@import 'logged-in/notification';
 
 @import 'custom';
 

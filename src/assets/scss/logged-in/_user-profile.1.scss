@@ -278,6 +278,7 @@
   // justify-content: center;
 
   h1 {
+    color: $darker-gray;
     flex: 0 0 100%;
     @include breakpoint(650px) {
       font-size: 2rem;

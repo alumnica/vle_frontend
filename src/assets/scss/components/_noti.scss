@@ -1,0 +1,69 @@
+// .noti-wrapper{
+// background-color: red;
+
+// }
+
+// $var: 100vw !default; // Can be overridden elsewhere
+
+// @if $var > 1200px {
+//   // Conditional code
+// }
+
+.noti-cont{
+  position: absolute;
+  @include breakpoint(1200px){
+    right: calc((100vw - 1200px) / 2);
+  }
+  @include breakpoint(medium){
+    width: 300px;
+  }
+  right: 0;
+  top: 45px;
+  width: 100%;
+  border: solid 1px $light-gray;
+  box-shadow: 2px 5px 10px rgba(0,0,0,.2);
+  height: auto;
+}
+
+.noti {
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+  background-color: $white;
+  &:not(:last-child){
+    border-bottom: 1px solid $light-gray;
+  }
+  &:last-child{
+  box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+  }
+
+  @include breakpoint(medium){
+    &:last-child{
+      box-shadow: none;
+      }
+  }
+
+  &_img{
+    height: 50px;
+    // margin-left: .5rem;
+
+    img{
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+
+  &_text{
+    flex: 2;
+    text-align: center;
+    margin-right: .5rem;
+  }
+
+  &.new{
+    background-color: lighten($primary-color, 35);
+  }
+
+  &:hover{
+    outline: 1px solid $medium-gray;
+  }
+}
