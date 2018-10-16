@@ -23,7 +23,12 @@
   border: solid 1px $light-gray;
   box-shadow: 2px 5px 10px rgba(0,0,0,.2);
   height: auto;
+  display: none;
+  &.is-open {
+    display: block;
+  }
 }
+
 
 .noti {
   display: flex;
