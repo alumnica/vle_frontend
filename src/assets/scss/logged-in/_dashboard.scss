@@ -58,10 +58,12 @@
 }
 
 .recent-activity {
+  
   @include xy-cell(12, $gutters: 0);
   padding: 0.3rem 0;
   overflow: auto;
   @include breakpoint(medium) {
+    padding: .5rem;
     @include xy-cell(6);
     margin-top: 1rem;
   }
@@ -166,11 +168,14 @@
 }
 
 .blog {
+  
+  padding: .5rem;
   @include xy-cell(12);
   @include breakpoint(medium) {
     @include xy-cell(6);
     @include flex;
     @include flex-align(center, middle);
+    margin-top: 1rem;
   }
 
   &-content {
@@ -192,7 +197,7 @@
     width: 30%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 10px;
+    margin:0 10px;
   }
   text-align: center;
   margin-bottom: 15px;

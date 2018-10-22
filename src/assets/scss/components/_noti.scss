@@ -48,20 +48,30 @@
       }
   }
 
-  &_img{
-    height: 50px;
-    // margin-left: .5rem;
+  &_icon{
+    box-shadow: 1px 1px 3px rgba(0,0,0,.2);
+    background-color: $white;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    img{
-      max-height: 100%;
-      max-width: 100%;
-    }
+  .icon_container{
+    padding-top: 5px;
+    font-size: 1.5rem;
+    
   }
 
   &_text{
+    font-size: .9rem;   
     flex: 2;
     text-align: center;
     margin-right: .5rem;
+    color: $darker-gray;
   }
 
   &.new{
