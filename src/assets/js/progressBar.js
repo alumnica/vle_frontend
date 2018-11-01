@@ -1,3 +1,7 @@
+var points = [3000, 5000];
+var percent = points[0] / points[1];
+
+var avatarPercent = 0.7;
 var bar = new ProgressBar.Line(progress, {
   strokeWidth: 1,
   easing: 'easeInOut',
@@ -14,7 +18,7 @@ var bar = new ProgressBar.Line(progress, {
   text: {
     // Initial value for text.
     // Default: null
-    value: '30,000',
+    value: points[0],
 
     style: {
       transform: {
@@ -29,8 +33,7 @@ var bar = new ProgressBar.Line(progress, {
   },
 });
 
-bar.animate(0.9); // Number from 0.0 to 1.0
-
+bar.animate(percent); // Number from 0.0 to 1.0
 
 var avatarBar = new ProgressBar.Line(avatarProgress, {
   strokeWidth: 2,
@@ -41,4 +44,4 @@ var avatarBar = new ProgressBar.Line(avatarProgress, {
   trailWidth: 2,
 });
 
-avatarBar.animate(0.5); // Number from 0.0 to 1.0
+avatarBar.animate(avatarPercent); // Number from 0.0 to 1.0

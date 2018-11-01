@@ -1,36 +1,36 @@
 //styles for momento.html
 
 .nav-items {
-    // position: absolute;
-    // height: 100%;
-    // width: 100%;
-    // top: 0;
-    // z-index: 10;
+  // position: absolute;
+  // height: 100%;
+  // width: 100%;
+  // top: 0;
+  // z-index: 10;
 
-    .prev-arrow{
-        position: absolute;
-        top: 47%;
-        left: 0;
-        font-size: 3rem;
-        color: $white;
-        background-color: lighten($color-violet, $amount: 40);
-        width: 3rem;
-        text-align: left;
-        padding-top: .5rem;
-        height: 5rem;
-        border-top-right-radius: 2.5rem;
-        border-bottom-right-radius: 2.5rem;
-        @include breakpoint (800px){
-            text-align: right;
-            width: 5.5rem;
-            padding-right: 1rem;
-        }
-
-        &:hover {
-            cursor: pointer;
-            background-color: lighten($color-violet, 20);
-        }
+  .prev-arrow{
+    position: absolute;
+    top: 47%;
+    left: 0;
+    font-size: 3rem;
+    color: $white;
+    background-color: lighten($color-violet, $amount: 40);
+    width: 3rem;
+    text-align: left;
+    padding-top: .5rem;
+    height: 5rem;
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    @include breakpoint (800px){
+      text-align: right;
+      width: 5.5rem;
+      padding-right: 1rem;
     }
+
+    &:hover {
+      cursor: pointer;
+      background-color: lighten($color-violet, 20);
+    }
+  }
 
 
     .next-arrow{
@@ -74,7 +74,7 @@
     font-size: 1rem;
     padding-top: .3rem;
     position: absolute;
-    bottom: 1rem;
+    bottom: .5rem;
     right: .5rem;
     z-index: 11;
     color: $color-violet;
@@ -105,7 +105,7 @@
     padding: .2rem;
     margin: 0 1rem;
     @include breakpoint(800px){
-        width: 90%;
+        width: 95%;
         height: 95%;
         padding: 1rem;
         position: relative;
@@ -148,9 +148,7 @@
 }
 
 #second {
-    background-color: sandybrown;
-    
-    
+    background-color: sandybrown;+
 }
 
 #third {
@@ -159,11 +157,14 @@
 }
 
 #fourth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     // background-color:khaki;
     @include breakpoint(800px){
-        padding: 2rem;
+        // padding: 2rem;
     }
-    padding: .5rem;
+    // padding: .5rem;
     width: 100%;
     height: 100%;
     
@@ -358,7 +359,7 @@
     bottom: 2rem !important;
 }
 .fp-slidesNav.top {
-    top: 0 !important;
+    top: -10px !important;
 }
 
 // nav
@@ -367,88 +368,7 @@
     background: #73308a !important;   
 }
 
-.end-of-uoda{
-    background-color: white;
-    margin: 0 auto;
-    width: 50%;
-    // height: 100%;
-    border-radius: 2rem;
-    box-shadow: 0px 0px 25px rgba(115, 48, 138, 0.514);
-    padding: .3rem;
-    padding: 1rem;
-    @include breakpoint(800px){
-        height: 80%
-    }
-    @include breakpoint (500px down){
-        // padding: .1rem;
-        width: 100%;
-        // height: 60%;
-    }
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    // align-items: center;
-    
 
-    .uoda-image {
-        // border: solid 1px black;
-        height: 6rem;
-        img{
-            max-width: 100%;
-            max-height: 100%;
-        }
-        @include breakpoint (800px){
-            height: 50%;
-        }  
-    }
-
-    .uoda-score{
-        font-size: 1.2rem;
-        @include breakpoint (800px){
-            font-size: 1.5rem;
-        }
-
-        .fa-star {color: gold}
-    }
-   
-
-}
-
-.end-uoda-btn-cont{
-    width: 100%;
-    height: 100%;
-    
-
-  
-}
-
-.end-uoda-btn {
-
-    display: inline-block;
-    background-color: $color-red;
-    padding: 1rem 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    border-radius: 1.5rem;
-    border: 5px solid white;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
-    transition: all .2s;
-    @include breakpoint(800px){
-        padding: 1.5rem 2.5rem;
-        font-size: 1.5rem;
-    }
-    &:hover{
-        transform: scale(1.05);
-        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
-        transition: all .2s;
-
-    }
-
-}
 
 // .uoda-suggestions{
 

@@ -8,13 +8,16 @@ $(document).ready(function () {
         verticalCentered: false,
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'eighthPage', 'ninethPage', 'tenthPage', 'eleventhPage', 'twelvethPage'],
         menu: '#evalMenu',
+        
  
     });
 
     //finish evaluation and show score screen
-    $('.end button').click(function(){
+    $('.end button').on('click', function(){
         $(this).parent().parent().remove();
-        $('.the-score').fadeIn(500);
+        $('.end-scoring').fadeIn(500);
+        showNum();
+        ran = true;
     });
 
     // starts all quesiton logic
