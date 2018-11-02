@@ -18,6 +18,9 @@ $(document).ready(function() {
     },
   });
 });
+
+
+
 var ran = false;
 
 function upCounter() {
@@ -44,6 +47,7 @@ async function showNum() {
   await showBoxes();
   setTimeout(upCounter, 2000);
 }
+
 
 var items = $('.bonus-box');
 
