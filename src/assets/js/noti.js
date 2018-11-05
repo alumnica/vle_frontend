@@ -1,1 +1,1 @@
-$('#exampleModal1').foundation('open');
+// $('#exampleModal1').foundation('open');

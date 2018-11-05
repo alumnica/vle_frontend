@@ -52,6 +52,9 @@ import flip from 'flip';
 //fullpage.js
 
 import fullpage from 'fullpage.js';
+window.fullpage = fullpage;
+
+
 
 import Foundation from 'foundation-sites';
 

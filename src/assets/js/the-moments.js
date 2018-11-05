@@ -1,22 +1,28 @@
 $(document).ready(function() {
   // starts fullpage.js
 
-  $('#moments').fullpage({
-    anchors: ['firstPage'],
-    verticalCentered: false,
-    slidesNavigation: false,
+  // $('#moments').fullpage({
+  //   anchors: ['firstPage'],
+  //   verticalCentered: false,
+  //   slidesNavigation: false,
     // slidesNavPosition: 'top',
-    loopHorizontal: false,
-    afterSlideLoad: function(section, origin, destination, direction) {
-      var loadedSlide = this;
+    // loopHorizontal: false
+    // afterSlideLoad: function(section, origin, destination, direction) {
+    //   var loadedSlide = this;
 
-      //first slide of the 1st section
-      if (destination == 3 && direction == 3 && ran == false) {
-        showNum();
-        ran = true;
-      }
-    },
-  });
+    //   //first slide of the 1st section
+    //   if (destination == 3 && direction == 3 && ran == false) {
+    //     showNum();
+    //     ran = true;
+    //   }
+    // },
+    // afterSlideLoad: function( section, origin, destination, direction){
+    //   console.log('lol')
+    // },
+ 
+  
+  // });
+  
 });
 
 
